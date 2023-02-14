@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<style>
+    div{
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 2px solid red;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    thead,th{
+        border: 1px solid black;
+        background-color: rgb(83, 83, 83);
+        color: white;
+    }
+    caption{
+        background-color: darkgray;
+        color:white;
+    }
+    tr,td{
+        border: 1px solid black;
+        text-align: center;
+        width: 700px;
+    }
+    .valor{
+        color: red;
+    }
+</style>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Caption e Escopo de títulos em tabelas</h1>
+    <main>
+        <h2>Onde usas as Tags (th e td)</h2>
+        <p><strong>th</strong> seria o título da colona,  usamos quando a primeira linha não é o conteúdo mas indica oque vem abaixo da coluna, como quando se extra a planilha da oimenu, vem as colunas de mesas, valor, categoria, <strong>th</strong> ao sentido da coluna e <strong>td</strong> seria as informações de conteúdo das linhas</p>
+        <hr>
+        <h2>Escopo nas tags</h2>
+        <p><strong>scope="col"</strong> usamos quando dentro da tag do <strong>th</strong> para indicar que ali é o escopo da coluna de cabeçalho, quando é <strong>tfoot</strong> que são o rodapé da tabela usamos <strong>scope="row"</strong> que indica que está na mesma linha do rodapé dentro também da tag <strong>th</strong> mas no caso dentro do rodape</p>
+        <p>Essas são boas práticas, para que o código seja analisado de maneira melhor pelos mecanismo de buscas dos navegadores</p>
+        <hr>
+        
+    </main>
+    <div>
+        <table>
+            <caption>Historicos de pedidos</caption>
+            <thead >
+                    <th scope="col">id</th><!--Cabeçalho id-->
+                    <th scope="col">Mesa</th><!--Cabeçalho mesa -->
+                    <th scope="col">Comandas</th><!--Cabeçalho comandas -->
+                    <th scope="col">produto</th><!--Cabeçalho produto -->
+                    <th scope="col">valor</th><!--Cabeçalho valor -->
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="row">Resumo</th><!--coluna 1 rodape-->
+                    <th scope="row"></th><!--mesa rodape-->
+                    <th scope="row"></th><!--comanda rodape-->
+                    <th scope="row">Total do dia =></th><!--total rodape-->
+                    <th scope="row">63,80</th><!--Total valor rodape-->
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>89ds89ds</td><!--id-->
+                    <td>30</td><!--mesa-->
+                    <td>45</td><!--comanda-->
+                    <td>Àgua c/gás</td><!--produuo-->
+                    <td class="valor">5,00</td><!--valor-->
+                </tr>
+                <tr>
+                    <td>cx65cx23</td><!--id-->
+                    <td>16</td><!--mesa-->
+                    <td>10</td><!--comanda-->
+                    <td>Hamburgue</td><!--produto-->
+                    <td class="valor" class="valor">30,00</td><!--valor-->
+                </tr>
+                <tr>
+                    <td>ew89ds56</td><!--id-->
+                    <td>20</td><!--mesa-->
+                    <td>70</td><!--comanda-->
+                    <td>Batata frita</td><!--produto-->
+                    <td class="valor">15,90</td><!--valor-->
+                </tr>
+                <tr>
+                    <td>vc32ds56</td><!--id-->
+                    <td>30</td><!--mesa-->
+                    <td>28</td><!--comanda-->
+                    <td>Suco de laranja</td><!--produto-->
+                    <td class="valor">12,90</td><!--valor-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+    <iframe width="694" height="390" src="https://www.youtube.com/embed/ZnjU3PzhGi0" title="Caption e Escopo de títulos em tabelas - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

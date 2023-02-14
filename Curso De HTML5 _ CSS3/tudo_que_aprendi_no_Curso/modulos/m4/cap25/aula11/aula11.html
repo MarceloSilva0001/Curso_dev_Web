@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/modulos/m4/estilo.css">
+    <title>Aula 11</title>
+</head>
+<body>
+    <main>
+        <a href="../cap25.html"><img src="/modulos/m4/midiaM4/volte.png" alt="voltar" width="30"></a>
+        <h1>Criando um menu hambúrguer</h1>
+        <a href="exaula11.html">Exercicio</a>
+        <hr>
+        <h2>Menu se escondendo ao click</h2>
+        <p>Para esse efeito acontecer, foi preciso usar javascrip, criando um script, o profressor criou uma função e deu a ela o nome de <strong>clickMenu</strong>, com essa função, sempre que o usuario clica nos 3 pontinhos, o menu vai se recolher(o menu é uma div no modo semantico).</p>
+        <p>Primeiros passos, para criar o menu, pegamos um icone de menu, o famoso menu 3 traços, como pegamos ele do google, usamos um link exteno de css que é mostrado na aula, dentro da tag desse icone, demos um <strong>id</strong> ela ja vem com class por padrão, dentro ainda dessa tag, no final colamos uma parametro chamado <strong>onclick="função"</strong> e dentro do campo que está escrito função, foi criado uma função chamada <strong>clickMenu</strong> Essa função foi criada na hora mesmo, usando javascript, dentro da tag "menu" foi dado um <strong>id</strong> chamado <strong>itens</strong> com isso apontamos o o bloco que deveria ser escondido. No resumo a função clickMenu, vai retornar um <strong>display: block;</strong> quando o usuario clica no icone de hambuerguer, e o menu vai aparecer, e para esconder, quando o usurio clica vai retornar <strong>display:none;</strong> Para o menu não aparecer</p>
+        <h2>Função clickMenu</h2>
+        <p>Como tinha falado no texto anterior, essa função foi criada na hora para se encaixar a funcionalidade, era funciona da seguinte forma.</p>
+        <p>Podemos criar um documento externo ou interno fora de uma div, mas dentro do body. <br> Primeiro criamos um <strong>Script</strong> e dentro desse scripit criamos a função com o nome que quisermos o nome desse foi o <strong>clickMenu</strong>, então dentro do script fica assim <br> <br> script <br> function clickMenu(){ <br> if(itens.style.display == 'block'){ <br> itens.style.display = 'none' <br> }else{ <br> itens.style.display = 'block' <br> } <br> } </p>
+        <p> Basicamente essa função tem a seguinte lógica de programação, se <strong>itens.style.display</strong> for igual a <strong>block</strong>, o  <strong>itens.style.display</strong> recebe o parametro <strong>'none'</strong> que significa esconder, se n~]ao estiver, ele rebecebe <strong>'block'</strong></p>
+    </main>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/Dd6Z3gkud18" title="Criando um menu hambúrguer - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

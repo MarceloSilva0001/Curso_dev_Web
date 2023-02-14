@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estiloJS.css">
+    <title>Aula 06</title>
+</head>
+<body>
+    <main>
+        <a href="../Curso_javas_cript.html"><img src="/imagens/volte.png" alt="voltar" width="30"></a>
+        <h1>Tratamento de dados</h1>
+        <div>
+            <h2>Coletando nome e mostrando no alerta</h2>
+            <p>para fazer esse processo criamos uma variavel, e atribuimos o dado coletado no aletar. exemplo: <br> Coletar o nome:<strong> var nome = window.prompt("Digite seu nome")</strong> <br> Mostrar o nome: <strong>window.alert('é um prazer em te conhecer,'+ nome)</strong> temos o primeiro texto dentro de aspas simples, e depois dela vem o "+" e o nome da variavel pra mostrar na tela o dado armazenado naquela variavel</p>
+            <hr>
+            <h2>Colentando dados para soma</h2>
+            <p>Devemos converter os numeros que vão ser somados, mas porque temos que converter? pois de forma automatica o java script nesse comando de coleta dos dados, trasnforma todos carcteres em string, porem podemos indicar como devera ser feita essa coleta, quando se tratar de tipos Primitivos diferentes</p>
+            <h3>Conversão de String para numeros real ou inteiro</h3>
+            <p><strong>Number.parseInt(n)</strong> Para coverter numeros inteiros</p>
+            <p><strong>Number.Float(n)</strong> Para coverter numero real</p>
+            <p>Dessa Forma, quando formos coletar algum dado com pelo colocamos o comando dessa forma: <strong>Number.parseInt(window.prompt("Ano de nascimento?"))</strong> atras do "prompt("Ano de nascimento?")" vem o dado de conversão.</p>
+            <h3>Conversão de numeros real ou inteiro para String</h3>
+            <p><strong>String(n)</strong> <br><strong>n.toString()</strong></p>
+            <hr>
+             <h2>Mostrando os dados coletados</h2>
+             <p>Com o comando <strong> window.alert('Texto ou pergunta')</strong> Mostrarmos um texto, porem podemos mostrar uma varivael dentro desse texto, exemplo: <br> É um Prazer em te Conhecer Marcelo, agora sabendo sua idade que é 23 anos, fico Muito feliz em falar com você! <br> <br> Para colocar variaveis no nos compos que queremos,umas das forma que podemos fazer é dessa forma: <br> É um Prazer em te Conhecer <strong>${nome da var}</strong>, agora sabendo sua idade que é  <strong>${nome da var}</strong>, fico Muito feliz em falar com você!</p>
+             <hr>
+             <h2>Formatação de Strings</h2>
+             <h3>Contador de Caracteres</h3>
+             <p><strong>variavel.length</strong> Nesse comando, indicamos o nome da varievel colocamos um ponto e length, pra contar os caracteres</p>
+             <h3>Tudo para "MAIÚSCULAS"</h3>
+             <p><strong>variavel.toTupperCase()</strong></p>
+             <h3>Tudo para "minúsculas"</h3>
+             <p><strong>variavel.toLowerCase()</strong></p>
+             <hr>
+             <h2>Formatação de Numeros</h2>
+             <h3>Colocando mais cadas decimais</h3>
+             <p><strong>variavel.toFixed(valor)</strong> Se era 6.8 passa a ser 6.80</p>
+             <h3>Trocando uma coisa por Outra</h3>
+            <p>Com esse comando podemos remover um ponto e colocar uma virgula por exeplo <br> <strong>variavel.toFixed(valordascasas decimais).replace('.',',')</strong></p>
+            <h3>Mostrando Moeda por Páis</h3>
+            <p><strong>variavel.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})</strong> <br> Resultado: R$1.545,50</p>
+            <p><strong>variavel.toLocaleString('pt-BR',{style:'currency',currency:'USD'})</strong> <br> Resultado: US$1.545,50</p>
+            <p><strong>variavel.toLocaleString('pt-BR',{style:'currency',currency:'EUR'})</strong> <br> Resultado: €1.545,50</p>
+            
+           <script>
+                
+                var nome = 'Marcelo'; //window.prompt("Digite seu nome")
+                var nota = 6.8; //Number.parseFloat(window.prompt('Digite sua nota ex: 6.0 ou 8.4'))
+                var nasc = 10; //Number.parseInt(window.prompt("Ano de nascimento?"))
+                var anoat = 2023;//Number.parseInt(window.prompt("Ano atual?"))
+                var idade = anoat - nasc;
+
+
+               window.alert(`É um Prazer em te Conhecer ${nome.toUpperCase()}, agora sabendo sua idade que é ${idade} anos e sua nota é ${nota.toFixed(2).replace('.',',,,,,,,,,')}, fico Muito feliz em falar com você! Vou te passar alguns dados ok? Seu nome tem ${nome.length} Letras, e você tem ${idade.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} na conta era isso então, tachau tachau ${nome.toLowerCase()}`)
+
+               
+            </script>
+
+        </div>
+    </main>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/OJgu_KCCUSY" title="Tratamento de dados - Curso JavaScript #06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 03</title>
+</head>
+<body>
+    <a href="cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Métodos GET e POST para formulários</h1>
+    <main>
+        <p>Anotação</p>
+        <h2>GET</h2>
+        <strong>&lt;form action="cadastro.php">
+        <p>Existem dois metados para envio de formulario, quando não colocamos metodos algum, por padrão usamos o metodo get, <strong>GET</strong> ele envia os dados direto na url, faça um teste de envio após criar o forumulario, depois quando der erro de envio ou enviar, veja na url os dados que você colocou. <br> O metodo get também só pode ser usado caso não ultrapassar 3.000 caracteres.<H2>POST</H2> <strong>&lt;form action="cadastro.php" method="post" autocomplete="off"></strong> </p> 
+        <p>quando criamos o forumulario usando o metodo post, os dados somem da url, aparecem somente o submit de envio("cadastro.php") do formulario, porem ainda sim não está seguro, caso inspecionar o código, ainda sim é possivel validar os dados. <br>Caso quiser proteger, será preciso enviar os dados por https, porem é uma forma mais avançada que leva mais tempo para aprender, no momento esses dois exemplos servem.</p>
+        <hr>
+    <p>Quando usar? o metodo <strong>get</strong> pode ser usado quando não se envia informações importantes como (dados bancarios, informações de senha e identidade) o metodo <strong>post</strong>, é usado nesses casos pois esconde esses dados.</p>
+        <hr>
+        <h2>Formulario</h2>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p><label for="nome">Nome</label><input type="text" name="name" id="idname"></p>
+
+            <p><label for="sobrnome">Sobrenome</label><input type="text" id="idsobrenome"></p>
+            <input type="submit" value="Enviar">
+        </form>
+        
+    </main>
+    <br>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/rcaXavXsWGA" title="Métodos GET e POST para formulários - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

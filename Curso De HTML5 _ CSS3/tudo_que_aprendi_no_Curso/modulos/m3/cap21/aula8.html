@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 08</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: pink;
+            
+        }
+        .row{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Mesclagem de células</h1>
+
+    <main>
+        <p><strong>colspan="valor"</strong> Essa primeira declaração faz com que a tag da celula <strong>td</strong> que estiver com essa declaração mescle a quantidade de colunas que você quiser para direita</p>
+        <p><strong>rowspan="valor"</strong> Essa segunda declaração faz com que a Mesclagem dentro das tag <strong>td</strong> sejam feitas para as linhas de baixo</p>
+
+        <table>
+            <tbody>
+                    <tr>
+                        <td colspan="2" class="row">A</td>
+                        <td>B</td>
+                        <td rowspan="4" class="row">C</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="row">D</td>
+                        <td colspan="2" class="row">E</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td rowspan="2" class="row" >H</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>K</td>
+                    </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <br><br><br><br>
+    <iframe width="694" height="390" src="https://www.youtube.com/embed/olZgL09uDAU" title="Mesclagem de células - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            
+        }
+        caption{
+            font-weight: bold;
+            padding: 5px;
+            background-color: darkgray;
+            color: white;
+        }
+        thead{
+            background-color: rgb(99, 98, 98);
+            color: white;
+        }
+        tr{
+            border-style: solid;
+            
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            width: 700px;
+        }
+        .footer{
+            background-color: rgb(99, 98, 98);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Aprendendo a trabalhar com tabelas grandes</h1>
+
+    <main>
+        <p>Estrutura para tabelas com mais contúdo, contrunção de forma semantica</p>
+        <p>ANOTOMIA PARA TABELAS GRANDES</p>
+        <p>obs: abre o código e veja como ficou o exemplo</p>
+        <p>Dentro  de <strong>Table</strong> colocamos as tags semanticas da tabelas que são CABEÇALHO <strong>thead</strong> CONTEÚDO <strong>tbody</strong> RODAPÉ <strong>tfoot</strong></p>
+        <p>Dentro colocamos o <strong>tr</strong> e dentro de tr o <strong>th</strong></p>
+        <!--TABLE
+            CAPTION(LEGENDA EM CIMA DA TABELA)
+                THEAD(CABEÇALHO)
+                    TR, TD, TH
+                TBODY(CONTEÚDO)
+                    TD, TD, TH
+                TFOOT(RODAPÉ)
+                    TD, TD, TH
+        -->
+        <table>
+            <caption>População das Unidades federetivas</caption>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th> Unidade federetiva</th>
+                    <th>População</th>
+                    <th>% da População Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td>45.919.049</td>
+                    <td>21,9%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas gerais</td>
+                    <td>21.168.791</td>
+                    <td>10.1%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rio de Janeiro</td>
+                    <td>17.264.943</td>
+                    <td>8,2%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="footer">
+                    <th>Informações</th>
+                    <td></td>
+                    <td>84.352,783</td>
+                    <td>40,20%</td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <br><br><br><br>
+    <iframe width="694" height="390" src="https://www.youtube.com/embed/XmrNuqmmckM" title="Aprendendo a trabalhar com tabelas grandes - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px; 
+  }
+  /*Essa função esconde a barra de rolagem*/
+  ::-webkit-scrollbar{
+      width: 0px;
+      height: 0px;
+  }
+  img{
+      background-size: cover;
+      width: 100vw;
+  }
+  a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: red;
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  a:hover{
+          background-color: rgb(4, 0, 255);
+  }

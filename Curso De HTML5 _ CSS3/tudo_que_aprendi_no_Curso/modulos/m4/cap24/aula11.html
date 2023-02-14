@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 11</title>
+</head>
+<body>
+    <a href="./cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Elemento output em formulários HTML</h1>
+    <main>
+        <h2>EX 1( Soma de valores)</h2>
+        <p>Nesse exeplo, usamos o formularo noraml para coletar as informações para a soma, que no caso foi o input do tipo <strong>Number</strong> porem dentro desse input usamos um pouco de javascript <strong>oninput="id_soma.innerHTML = Number(n1.value) + Number(n2.value)"</strong> dentro do primeiro input N1 e depois dentro deo input n2 o mesmo formato</p>
+        
+        <fieldset>
+            <legend>Soma</legend>
+            <form action="a.php" method="post">
+              <p>
+                <label for="n1">N1:</label>
+                <input type="number" name="numero1" id="n1" required oninput="id_soma.innerHTML = Number(n1.value) + Number(n2.value)">
+              </p>
+              <p>
+                <label for="n2">N2</label>
+                <input type="number" name="numero2" id="n2" required oninput="id_soma.innerHTML = Number(n1.value) + Number(n2.value)">
+              </p>
+              <p>
+                <label for="id_soma">Resultado:</label>
+                <output name="soma" id="id_soma">0</output>
+              </p>
+              <input type="reset" value="Limpar">
+              <input type="submit" value="Enviar">
+            </form>
+        </fieldset> <br>
+        
+        <h2>EX 2</h2>
+        <p>Nesse exemplo, veremo que ao mudar o ponto da barra de nivel, mostra se o valor atual em que ela está, isso tudo porque para mostrar a informação foi usando um pouco de java script, para que o número aparece ao lado criamos um label, e usamos colocamos o <strong>output</strong>, dentro do <strong>input</strong> e mostamos um pouco de programação</p>
+        
+        <fieldset>
+            <legend>Nivel Mostrando valor</legend>
+        <form action="nivel.php" method="post">
+            <p>
+                <label for="id_nivel">Nivel:</label>
+                <input type="range" name="nivel" id="id_nivel" min="0" max="10" value="10" oninput="id_valor.innerHTML = Number(id_nivel.value)">
+                <output id="id_valor"></output>
+            </p>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+        </form>
+        </fieldset> <br>
+        <h2>EX 3</h2>
+        <p>Nesse exeplo, foi preciso criar uma função com javascript, para somar data, para isso foi usado um input do tipo Number, para colar numeros, e foi usado o oninput para fazer o calculo</p>
+        <fieldset>
+            <legend>Ano de Nascimento</legend>
+            <form action="ano.php" method="post">
+                <p>
+                    <label for="idano">Ano de Nascimento:</label>
+                    <input type="number" name="anonascimento" id="idano" value="2000"  oninput="calcIdade()">
+                </p>
+
+                <p>
+                    <label for="ididade">Sua idade nesse ano será de:</label>
+                    <output id="ididade">0</output>
+                </p>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+            </form>
+        </fieldset>
+
+        <script>
+            function calcIdade(){
+                let atual = new Date().getFullYear()
+                ididade.innerHTML = Number(atual) - Number(idano.value)
+            }
+        </script>
+    </main>
+    <iframe width="533" height="300" src="https://www.youtube.com/embed/8b6K4UQDm7w" title="Elemento output em formulários HTML - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,70 @@
+p{
+    color: black;
+}
+strong{
+    color: blue;
+}
+header{
+    border-radius: 10px;
+    background-color: black;
+   
+}
+li{
+    color: white;
+}
+header > h1{
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav{
+    margin: 10px;
+    padding: 5px;
+    border: 1px;
+}
+nav > ul{
+    background-color: rgb(167, 158, 158);
+    margin: 10px 10px;
+    border: 10px 10px;
+    padding: 10px 10px;
+    box-shadow: 1px 0px 5px 5px blue;
+}
+button{
+    margin-left:30px;
+    background-color: rgb(6, 122, 117);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    color: white;
+}
+button:hover{
+    margin-left:30px;
+    background-color: rgb(29, 216, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    border-color: aquamarine;
+}
+footer >p{
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+section >ul{
+    background-color: rgb(6, 122, 117);
+    padding: auto 10px auto 0px;
+    margin: auto 10px auto 10px;
+    box-shadow: 1px 0px 5px 5px blue;
+}
+ul >h1{
+    font-size: 30px;
+    color: white;
+}

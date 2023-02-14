@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* versão mobile firts*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    background:black url('../cap25imganes/imagens/back-phone.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 80vw;
+}
+main > h1{
+    text-align: center;
+}
+img{
+    margin: auto;
+    display: block;
+}
+img#pri{ display: none;}
+img#tab{ display: none;}
+img#pho{ display: none;}
+img#not{ display: block;}
+img#tv{ display: none;}

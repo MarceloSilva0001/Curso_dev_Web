@@ -1,0 +1,55 @@
+@charset "UTF=8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+}
+body{
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') top center no-repeat;
+    background-size: cover;
+}
+main{
+    position: relative;
+    height: 100vh;
+}
+section#phone{
+    position: absolute;
+    background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 629px;
+    width: 320px;
+}
+
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height:471px;
+}
+section#social{
+    text-align: right;
+}
+section#social  img{
+    width: 50px;
+    margin: 10px;
+    margin-right: 50px;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px black;
+    /*Essa função faz com que ao passar o mouse em cima da das imagens ela não se movam, colocamos isso pois ao adcionai o efeito hover a imagem estava se movendo, faça um teste tirando e veja como ficou*/
+    box-sizing: border-box;
+}
+section#social img:hover{
+    /*Após passar o mouse em cima da imagem com link, vai criar uma borda branca em volta da imagem*/
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    transform: translate(-2px, -2px);
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}

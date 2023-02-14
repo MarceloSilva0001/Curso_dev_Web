@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*Como as declarações para o modo celular estão dentro do css style, quando a tela mudar de tamanho ela vai passar e respeitar essas conigurações das outras telas tablet, notebook, tv, com isso o site vai se adaptar*/
+@media screen and (min-width:500px) and (min-width:600px) {
+    h1{
+        color: red;
+    }
+    /*Como nessa tela será tablet, quando o site estiver nesse tamanho o menu hamburguer deve ser encondido*/
+    i#burguer{
+        display: none;
+    }
+    /*Como nessa tela será tablet, quando o site estiver nesse tamanho as opções do menu deve aparecer*/
+    menu{
+        display: block;
+    }
+    /*Na tela de celular o menu fica com as opções um em cima do outro, com essa função trasnformamos a direação do bloco para horizontal*/
+    menu > ul > li{
+        display: inline-block;
+    }
+    menu > ul > li >a{
+        border-radius: 10px;
+        margin: 5px;
+    }
+    main{
+        width: 600px;
+    }
+}
+@media screen and (min-width:992px) and (min-width:1200px) {
+   
+}
+@media screen and (min-width:1200) {
+    
+}

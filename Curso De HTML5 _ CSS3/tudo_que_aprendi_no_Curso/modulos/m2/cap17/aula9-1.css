@@ -1,0 +1,46 @@
+:root{
+    --fonte-color:white;
+    --fonte-color1:rgb(241, 132, 132);
+    --fundo-color1:red;
+    --fundo-color2:rgb(124, 20, 20);
+}
+#main{
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 780px;
+    background-image: linear-gradient(to bottom,var(--fundo-color1),var(--fundo-color2));
+}
+
+#main h1 {
+        color: var(--fonte-color);
+}
+#nav{
+    background-color: var(--fundo-color2);
+    padding: 30px;
+    margin: auto;
+    border-radius: 5px;
+    
+ 
+}
+#nav div{
+    text-decoration: none;
+    color: var(--fonte-color);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--fundo-color2);
+    display:inline-block;
+    margin: 0px 20px;
+}
+#nav div:hover{
+    background-image: linear-gradient(to bottom,var(--fundo-color1),var(--fundo-color2));
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+div a{
+   display: none;
+}
+div p:hover{
+    display: block;
+}

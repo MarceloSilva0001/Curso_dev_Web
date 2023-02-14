@@ -1,0 +1,10 @@
+/* Telas em modo Em pé*/
+
+html,body{
+    background-color: red;
+    background-image: url('cev-portrait.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilo2.css" media="screen">
+    <link rel="stylesheet" href="impressora.css" media="print">
+    <title>Aula 02</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Perdões noticias</h1>
+        <menu>
+            <ul>
+                <li>Tecnologia</li>
+            <li>Noticias</li>
+            <li>estado</li>
+
+            </ul>
+            
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Imprimindo Esse página HTML</h1>
+            <p>Nessa aula veremos como imprimir uma pagina sem ter que ter no na folha de impressão, todos os dados que se mostra no site, somente o que é ideal de ser impresso</p>
+
+            <h2>Por onde começamos a separar os tipos?</h2>
+            <p>Para começar, devemos montar nosso html normal, e criar duas folhas de estilo, uma para impressora e outro pro site, mas como assim para impressora? no caso vamos criar um css que vai mostrar somente a vizualização para impressão, removendo algumas informações ou adicionando.</p>
+            <p>dentro do css do site devemos colocar depois do href="nome.css" <strong>midia="screen"</strong>, que seria basicamente vizualização para telas, sem descriminar qual tamanho ainda, e o css de impressora colocamos href="nome.css" <strong>midia="print"</strong>, para indicar que todo css de impressão vai ser feito dessa forma.</p>
+            <h2>Estilo de impressão</h2>
+            <p>No estilo de impressão podemos colocar somente oque queremos mostra para imprimir, com isso partes como menu, ou rodapé de sites, videos e outros, podemos tirar, para isso, dentro do css de impressora, indicamos a tag, e colocamos <strong>display:none:</strong> que como vimos nos outras aulas que já tivemos, ele basicamente não mostra na tela. <br> podemos criar uma informação que só que aparecer somente na impressão, exemplos " esse artigo foi feito pelo site marcelo.com.br"</p>
+
+        </article>
+  
+</body>
+</html>

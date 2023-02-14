@@ -1,0 +1,73 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+    body,html{
+        background-color: rgb(207, 207, 207);
+    }
+    header{
+        background-color: gray;
+    }
+    header > h1{
+        text-align: center;
+        padding: 10px;
+    }
+    /*id do botão hamburguer*/
+    i#burguer{
+        color: white;
+        text-align: center;
+        /*O display block além de mostrar uma div, tranforma um elemento inline-level, em um box-level, veja mais sobre no modulo 2 cap 16*/
+        display: block;
+        background-color: rgb(73, 72, 72);
+        /*Faz a seta mudar quando passar por algum bloco, remove e veja a diferença*/
+        cursor: pointer;
+    }
+    /*Quando passar o mouse em cima do icone de menu vai acontecer essas declarações*/
+    i#burguer:hover{
+        color: black;
+        background-color: white
+    }
+    /* Display none, vai esconder o menu por padrão, e como vimos na aula 11, com java script faremos mostrar ou fechar*/
+    menu{
+        display:none;
+    }
+    /*Remove as bolinhas das lista ul > li*/
+    menu > ul{
+        list-style-type: none;
+    }   
+    /*Aqui estamos indicando que dentro do link vai receber as seguintes declarações*/
+    menu > ul > li > a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        background-color: rgb(73, 72, 72);
+        color: white;
+        text-align: center;
+        border:1px solid gray;
+        box-shadow:inset -2px 1px 14px 0px black;
+       
+    }
+    /*Quando passar o mouse por cima da cada opção do menu vai acontecer as declarações abaixo*/
+    menu > ul > li > a:hover{
+        background-color: rgb(112, 111, 111);
+    }
+
+    main{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80vw;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    article > h2{
+        padding-bottom: 10px;
+    }
+    article >p{
+        text-align: justify;
+        margin-bottom: 10px;
+        text-indent: 20px;
+    }

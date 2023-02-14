@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+    <link rel="shortcut icon" href="../midiaM2/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        h2{
+            text-align: center;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 15px 15px 0px 0px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        ul > li{
+                list-style-position: inside;
+                list-style-type:'\2714\00A0'; /*1F517*/
+        } 
+        a{
+             text-decoration: none;
+             font-size: 30px;
+        }       
+        a.external::after{
+            font-weight: bold;
+            content:'\1F517';
+        }
+        p{
+            color: black;
+            margin: 15px;
+        }
+        strong{
+            color: blue;
+          font-size: 20px;
+        }
+        footer a{
+            font-size: 15px;
+            font-weight: bold;
+            color: #FF9402;
+        }
+        footer{
+            margin: 10px;
+            background-color: blue;
+            color: white;
+            border-radius: 0px 0px 15px 15px;
+            margin: auto;
+        }
+        footer p{
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            background-color: blue;
+            color: white;
+        }
+        main{
+            padding: 0px ;
+        }
+    </style>
+</head>
+<body>
+    <a href="./cap17.html"><img src="../midiaM2/volte.png" alt="voltar" width="30"></a>
+    <h1>Rodapé, conteúdo periférico e links</h1>
+
+    <main>
+        <h2>Lista de links externos</h2>
+        <p>
+            Criamos nessa aula, o estilo do aside, que dentro continha listas, essa lista foi separda em duas lista uma de cada lado, colocamos icones de corrente simbolizando que aquele link é de um site externo ao nosso, e colocamos icones de lista de uma forma geral sem precisar ficar coloando um á um.
+        </p>
+        <p>Para colocar icones em todas os links das lista, usamos a funnção <strong>list-style-type:'\Código do icone';</strong></p>
+        <p>Para colocar um icone depois do link, e não antes, coloquei class em todos os link externos, e usar o after, que indica que depois do elemento faça tal ação <strong>(.NomeDadoAclass::after{ content:'\Código do icone'; })</strong> e dentro do css chamei a função.</p>
+        <ul>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+            <li><a href="https://www.luis.blog.br/links-internos-externos-verticais-e-de-email.html" class="external" target="_blank">Link externo</a></li>
+        </ul>
+        <footer><p>Site Criado Por <a href="https://br.linkedin.com/in/marcelo-augusto-da-silva-48a294246?original_referer=https%3A%2F%2Fwww.google.com%2F">Marcelo</a> Para o <a href="https://www.cursoemvideo.com/login/">CursoEmVideo</a></p></footer>
+    </main>
+     
+    <br><br><br><br>
+    <iframe width="733" height="412" src="https://www.youtube.com/embed/pdomr7thueI" title="Rodapé, conteúdo periférico e links - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

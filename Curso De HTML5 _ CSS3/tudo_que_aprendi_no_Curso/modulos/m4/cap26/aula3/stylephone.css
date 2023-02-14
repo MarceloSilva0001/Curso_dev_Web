@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*
+    Paleta de cores
+    verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root{
+    --cor0:white;
+    --cor1:#49a09d;
+    --cor2:#5f2c82;
+    --cor3:#4DB1F0;
+    --cor4:#146CA3;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*Com essa parametro informamos que a borda faça parte da conta de largura*/
+    box-sizing: border-box;
+}
+body,html{
+    /*
+    background-image:linear-gradient(to bottom,var(--cor4),var(--cor3)); */
+    background:var(--cor3);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--cor0);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    /*Tudo que estiver fora da div fica escondido, usou essa função pois a imagem ficou com as pontas de fora, remova para ver*/
+    overflow: hidden;
+    /*Sombra*/
+    box-shadow: 0px 0px 10px black;
+    /* Quando mudar a largura da tela, a section vai fazer uma mudança de estado nesse intervalo de tempo*/
+    transition: width 0.3s, height 0.3s;
+    /*Suavizar a trasição durante a transição*/
+    transition-timing-function: ease;
+}
+section#login > div#imagem{
+    display: block;
+    background: var(--cor4)  url('../Midia/programing.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    
+}

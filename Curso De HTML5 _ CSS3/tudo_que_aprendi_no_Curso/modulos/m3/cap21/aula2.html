@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head> 
+<style>
+    #table{
+        margin-top: 10px;
+    }
+    table{
+        border-style:groove;
+        width:400px;
+        
+        /*Essa função junta as bordas, como vem por padrão separdos*/
+        border-collapse: collapse;
+    }
+    .linha1{
+        background-color:green;
+        color: black;
+    }
+    .linha2{
+        background-color:yellow;
+        color:black;
+    }
+    .linha3{
+        background-color:red;
+        color: white;
+    }
+    .linha4{
+        background-color:black;
+        color: white;
+    }
+    td{
+        border-style: groove;
+        padding: 5px;
+    }
+</style>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Sua primeira tabela em HTML</h1>
+    <main>
+        <h1>Hierarquia de Tabelas</h1>
+        <p><strong>Table =</strong> tabela</p>
+        <p><strong>TABLE ROW</strong> linhas de tabela</p>
+        <p><strong>TABLE HEADER</strong> Cabeçalho de tabela</p>
+        <p><strong>TABLE DATA</strong> Dados de Tabela</p>
+        <hr>
+        <p>Primeiro para criar as tabelas, usamos a tag <strong>table</strong> e dentro delas ficam as <strong>tr</strong> são as tags de linha dentro das tr ficam as <strong>td</strong> que são os contéudos</p>
+        <hr>
+        <p>para juntas as linhas da tabelas usamos a seguinte função <strong>border-collapse: collapse;</strong> depois basta colocar uma border com estilo da linha <strong>border-style:groove;</strong></p>
+    </main>
+
+    <main id="table">
+        <table>
+            <tr class="linha1"> <!-- PRIMEIRA LINHA-->
+            <td> A1 </td>
+            <td> B1 </td>
+            <td> C1 </td>
+        </tr>
+        <tr class="linha2">
+            <td> A2 </td>
+            <td> B2 </td>
+            <td> C2 </td>
+         </tr>   
+         <tr class="linha3">
+            <td> A3 </td>
+            <td> B3 </td>
+            <td> C3 </td>
+         </tr>
+         <tr class="linha4">
+             <td> B4</td>
+             <td> A4</td>
+             <td> C4</td>
+         </tr>
+        </table>
+        
+        
+    </main>
+
+    <br><br><br>
+    <iframe width="694" height="390" src="https://www.youtube.com/embed/9IF4xvg5rWI" title="Ainda podemos usar tabelas em HTML? - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

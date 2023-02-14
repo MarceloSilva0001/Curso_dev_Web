@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .amarelo{
+            background-color:yellow;
+        }
+        .blue{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Agrupando Colunas com colgroup</h1>
+    <main>
+        <p><strong>"col"</strong> se refere a coluna, se tiver 4 colunas coloca 4 <strong>col</strong> dentro do <strong>colgroop</strong>, e dentro da tag coloca uma <strong>class</strong> para indentificação para fazer os ajustes, você também pode colocar span, que seria o mesmo que colocar quantidade ce colunas que vai receber a mesma <strong>class</strong> exemplo <strong>"col class"PADRAO" span="3"</strong>, aqui informei que 3 colunas vão receber a mesma class de stylo</p>
+        <p><strong>Span</strong>, nessa declaração informamos que as 3 colunas(pode colocar mais valores) vão receber a class de modificações</p>
+        <table>
+            
+            <colgroup>
+                <!--"col" se refere a coluna, se tiver 4 colunas coloca 4 col dentro do colgroop, e dentro da tag coloca uma clas para indentificação para fazer os ajustes, você também pode colocar span, que seria o mesmo que colocar quantidade ce colunas que vai receber a mesma class exemplo "<col class"PADRAO" span="3", aqui informei que 3 colunas vão receber a mesma class de stylo-->
+                <col class="blue">
+                <col class="amarelo" span="3">
+                <!--Span, nessa declaração informamos que as 3 colunas(pode colocar mais valores) vão receber a class de modificações-->
+                
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Idade</th>
+                    <th>Estado civil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marcelo</td>
+                    <td>Masculino</td>
+                    <td>22</td>
+                    <td>Solteiro</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>Feminino</td>
+                    <td>22</td>
+                    <td>Solteira</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Masculino</td>
+                    <td>32</td>
+                    <td>Casado</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <br><br><br>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/1Ro7rjINNb0" title="Agrupando Colunas com colgroup - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

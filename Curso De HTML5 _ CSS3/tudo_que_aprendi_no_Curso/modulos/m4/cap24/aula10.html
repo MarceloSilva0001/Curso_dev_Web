@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 10</title>
+</head>
+<body>
+    <a href=".//cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>elect, datalist e textarea em HTML</h1>
+    <main>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="id_estado">Estado</label>
+                <select name="estado" id="id_estado">
+                    <optgroup label="Região rica">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Regisão legal">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="BA" selected>Bahia</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="id_profisao">Profissão:</label>
+                <input type="text" name="profissao" id="id_profisao" list="prof">
+                <datalist id="prof">
+                     <option value="adm">admistrador</option>
+                     <option value="med">Médico</option>
+                     <option value="pdr">Pedreiro</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="obs">Campo de observação:</label> <br>
+                <textarea name="observação" id="obs" cols="30" rows="10"></textarea>
+            </p>
+        </form>
+        <hr>
+        <h2>Lista suspensa com nomes fixos</h2>
+        <p>Podemos usar uma lista, de escolha, como escolha de estado, para listar listar a opções usamos a tag <strong>select</strong> dentro dela colocamos a opções que são informadas com a tag <strong>option</strong> dentro de "option" colocamos os nomes das escolhas, como ex, cidades ou estados. <br> Uma das opções que podemos fazer e sepração de grupo, nesse exemplo serparmos os estados por regisão, pata isso selecionamos as regiões, e usamos a tag <strong>optgroup</strong> que separa as regiões</p>
+        <h2>Lista com opção de digitar nomes ou selecionar</h2>
+        <p>Na lista de prossisões, fizemos um campo que possibilita o usuario tanto selecionar quanto digitar o nome de sua profissão, para isso o processo basicamente começa, crindo uma label e um input do tipo texto, dentro da tag dos mesmo, colocamos uma tag chamada <strong>datalist</strong> e dentro da tag colocamos as opções, quem usam o formato de tag <strong>option</strong> também, para que essa lista seja informada dentro do <strong>datalist</strong>devemos colocar o atributo <strong>id="nome da lista"</strong> e dentro da tag d input, colocar o atributo <strong>list="nome da lista"</strong> com isso o suario consegue digital ou selecionar dentro desse campo.</p>
+        <h2>Campo de Observação</h2>
+        <p>Para criar o campo simples de observação, devemos criar uma label, e colocar o parametro <strong>textarea</strong> dentro deles as configurações é basicamente como a de um input de controle</p>
+    </main>
+    <iframe width="533" height="300" src="https://www.youtube.com/embed/PFGmSEj2wIo" title="Select, datalist e textarea em HTML - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

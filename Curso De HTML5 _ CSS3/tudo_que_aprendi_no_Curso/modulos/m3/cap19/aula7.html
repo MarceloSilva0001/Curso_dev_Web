@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 10PX;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            background-image: url('../midiaM3/imaFundo/target001.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+            border-radius:10px;
+        }
+        #content{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            
+            background-image: url('../midiaM3/imaFundo/target001.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 200px;
+            background-color: yellow;
+            width: 200px;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            text-align: center;
+        }
+        strong{
+            color: blue;
+        }
+        a{
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap19.html"><img src="../midiaM3/volte.png" alt="volte" width="30"></a>
+    <main>
+        <h1>Centralização vertical de caixas</h1>
+        <p><strong> transform: translate(-50%, -50%);</strong>-O primeiro valor move o bloco na Horizontal, O segundo Move o bloco na vertical, usamos %porcentagem para o calculo ser sempre automatico dependendo da expansão do bloco pai.</p>
+        <p><strong>position: relative;</strong>- Dentro do bloco pai, fazemos essa declaração, para que dentro do bloco filho possamos manipular o possição absoluta.</p>
+        <p><strong>position: absolute;</strong>- A possição absoluta, nos deixa mover o bloco filho, esse amarelo abaixo, para qualquer possição entre a esquerda e topo, com isso usamos os parametrôs dentro do bloco filho left e top, e colocamos valores, os valores em em %, fica mais fácil de se adaptar de forma automatica</p>
+        <p><strong>top:50%;</strong> Informa que o a ponta do bloco de deve ficar nesse valor do bloco no topo</p>
+        <p><strong>left: 50%;</strong>Informa que o a ponta do bloco de deve ficar nesse valor do bloco na esquerda</p>
+        <p><strong>background-size: 100% 100%;</strong> Aqui informo que o fundo, sendo imagem ou cor, vai ter 100% de alturada e largura, esse paremtro foi para alainha a imagem de possição nos dois blocos, marcos como centro, esse parametro de forma a imagem, pois ele vai se ajustar sempre ao bloco.</p>
+        <a href="aula7-1.html">Eu que fiz esse exemplo baseado no que aprendi na aula</a>
+    </main>
+
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+
+    <br><br><br>
+    <iframe width="560" height="320" src="https://www.youtube.com/embed/-w0Qo_qQiRg" title="Centralização vertical de caixas - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

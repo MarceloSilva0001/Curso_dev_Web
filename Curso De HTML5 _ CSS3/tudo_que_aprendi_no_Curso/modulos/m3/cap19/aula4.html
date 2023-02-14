@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mod3.css">
+    <title>Aula 4</title>
+    <style>
+        div.bloco{
+            height: 200px;
+            border: 10px groove red;
+            margin: 10px;
+            border-radius: 10px;
+            background-image:url('../midiaM3/imaFundo/wallpaper003.jpg');
+        }
+        #q1{
+            background-position: left top;
+        }
+        #q2{
+            background-position: top right;
+        }
+        #q3{
+            background-position:left bottom;
+        }
+        #q4{
+            background-position: center center;
+        }
+        #q5{
+            background-position: left center;
+        }
+        a{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        a:hover{
+            color: greenyellow;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="./cap19.html"><img src="../midiaM3/volte.png" alt="divida" width="30"></a>
+    <h1>Configurando a posição da imagem no fundo do site</h1>
+    <main>
+        <p><strong> background-position: left top;</strong>- Canto esquerdo da imagem, parte do topo.</p>
+        <p><strong> background-position: left center;</strong>-Canto esquerdo da imagem, parte do centro.</p>
+        <p><strong> background-position:left bottom;</strong>-Canto esquerdo da imagem, parte do de baixo.</p>
+        <p><strong> background-position: center center;</strong>- Meio da imagem, alinha ao centro.</p> <br>
+        <p>Dentro dessas declarações, estou informando que quero a que a imagem alinhe-se de acordo com a declarações de possicão dos exemplos de foto abaixo.</p>
+        <p>Dentro do mesmo ex, veremos que posicionar uma imagem dentro de uma div(caixa), de acordo com a nossa preferencia, esse ex está dentro do link logo abaixo.</p>
+    </main>
+    <a href="aula4-1.html">Movendo o mascote pela Página</a> <br>
+    <a href="aula4-2.html">Fixando ponto de imagem pela página</a>
+
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+    <div class="bloco" id="q5"></div>
+
+
+    <br><br><br><br>
+    <iframe width="733" height="412" src="https://www.youtube.com/embed/RpcmGqvzWxQ" title="Configurando a posição da imagem no fundo do site - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    /*Todas a declarção feita nesse campo, vale para todo o html da página*/
+
+    /*Todos os blocos vão ter margin 0 de inicio*/
+    margin: 0px;
+    /*Todos os blocos vão ter padddin padding 0 de inicio*/
+    padding: 0px;
+}
+:root{
+    /**/
+    --font-1: Verdana, Geneva, Tahoma, sans-serif;
+    --font-2:'Passion One', cursive;
+    --font-3:'Sriracha', cursive;
+
+}
+html,body{
+    /*Cor de Fundo primaria*/
+    background-color: darkgray;
+    /*Tamanho minimo da altura da página vai ser 100 da viewport*/
+    min-height: 100vh;
+    /*Variavel de fonte*/
+    font-family: var(--font-1);
+}
+header{
+    /*Cor da fonte nesse bloco*/
+    color: white;
+    /*Cor de Fundo nesse bloco*/
+    background-color:black;
+    /*Texto alinhado ao centro*/
+    text-align: center;
+}
+header > h1{
+    /*espeço entre o topo da margin e o titulo*/
+    padding-top: 50px;
+    /*EFEITO: Todas as letras vão ser maiusculas, com a primeira letra sendo maior*/
+    font-variant: small-caps;
+    /*Variavel de fonte*/
+    font-family: var(--font-2);
+    /*Tamanho da fonte vai ser adpatar a medida da largura da viwport em 10 vezez o tamamho dela*/
+    font-size: 10vw;
+}
+header >p{
+    /* dentro do cabeçalho, o paragrafo vai ter o espaço do padddin de 50px*/
+    padding-bottom: 50px;
+}
+footer a, header a{
+    /*Tudo que estiver dentro de  footer a e header a, vai receber os paremetros abaixo*/
+    /*Fonte vai ter o negrito mais forte dela*/
+    font-weight:bolder;
+    /*O link não vai ter underline em baixo dele*/
+    text-decoration: none;
+    /*a cor dos links vai ser branca*/
+    color: white;
+}
+header a:hover, footer a:hover{
+    /*A função hover indica que sempre que eu passar o mouse em cima os parametros abaixo vão acontecer*/
+    /*---------------------*/
+    /*vai aparecer o underline em baixo do texto*/
+    text-decoration:underline;
+    /* a cor do texto vai ficar branca*/
+    color: white;
+}
+section{
+    /* Aqui eu informo a VH como medida, pois com isso a margin sempre vai se adptar ao tamnho da v de (viewPort) h(altura) */
+    padding: 10vh 0vh 10vh 0vh;
+    /* Essa função faz um espaçamento entre a linha de altura entre as linhas, o a medida 2em é a que melhor ficou para a leitura*/
+    line-height: 2em;
+    /*Espaçamento entre o canto esquerdo da tela a o texto*/
+    padding-left: 30px;
+    /*Fonte de todas as sections com variavel*/
+    font-family: var(--font-3);
+    /*Tamanho das fonte das secctions, o parametro 2 veses maior que o padrão*/
+    font-size: 5vw;
+}
+section.normal{
+    /*O Fundo vai ser branco*/
+    background-color:white;
+    /*O cor da letra vai ser preta*/
+    color:black;
+}
+section.imagem{
+    /*o fundo vai ser cinza*/
+    background-color: rgb(70, 70, 70);
+    /*O cor da letra vai ser branca*/
+    color: white;
+    box-shadow:inset 10px 4px 17px black;
+    /*tamanho da image, vai ser o todo o prenchumento da viewport*/
+    background-size: cover;
+}
+section.imagem > p{
+    /*Essa função fez com que a caixa que contem o pagrafo se adpate a tela
+    sem deixar ter barra de rolagem*/
+    display: inline-block;
+    /*Fundo dos blocos de paragrafos imagem*/
+    background-color: rgba(0, 0, 0, 0.26);
+    /*Medida do bloco dos paragrafos de imagem*/
+    border-radius: 10px;
+    /*O espaço interno do bloco vai ter 10px*/
+    padding:10px;
+}
+section > p{
+    /*espaço em baixo de todos pagrafos va ser 1 vez maior que ele*/
+    padding-bottom: 1em;
+}
+section#img1{
+    /*imagem de fundo*/
+    background-image:url('midia/background001.jpg');
+    /*possição da imagem, lado direito alinhado ao centro*/
+    background-position: right center;
+    /* a image, fica fixa no fundo e somente o conteúdo se move no site*/
+    background-attachment: fixed;
+}
+section#img2{
+     /*imagem de fundo*/
+    background-image: url('midia/background002.jpg');
+    /*possição da imagem, lado direito alinhado ao centro*/
+    background-position: right center;
+    /* a image, fica fixa no fundo e somente o conteúdo se move no site*/
+    background-attachment: fixed;
+}
+footer{
+    /*Fundo vai ser preto*/
+    background-color: black;
+    /*O espaço interno do bloco vai ter 10px*/
+    padding: 10px;
+     /*O cor da letra vai ser branca*/
+    color: white;
+    /*texto alinhado ao centro*/
+    text-align: center;
+}

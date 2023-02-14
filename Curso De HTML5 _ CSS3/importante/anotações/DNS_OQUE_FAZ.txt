@@ -1,0 +1,4 @@
+O que é o DNS da internet?
+O sistema DNS da internet funciona praticamente como uma agenda de telefone ao gerenciar o mapeamento 
+entre nomes e números. Os servidores DNS convertem solicitações de nomes em endereços IP, controlando qual 
+servidor um usuário final alcançará quando digitar um nome de domínio no navegador da web.

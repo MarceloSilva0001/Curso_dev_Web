@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <link rel="stylesheet" href="../estilo.css">
+   <link rel="shortcut icon" href="../midiaM2/icone.png" type="image/x-icon">
+   <style>
+    body{
+        
+    }
+    a{
+        color: red;
+        text-decoration:none;
+        font-weight: bolder;
+         /* Coseguimos retirar o sublinhado do texto ddo linx, usando a função text-decoration:none/*/
+    }
+    a:visited{
+        color: blue;
+        /* dentro dessa função eu mostro que o link que foi visitado, ele deve ficar com a com red, caso não foi, ele fica azul mesmo como deixei ali em cima*/
+    }
+    a:hover{
+        text-decoration:underline;
+        color: rgb(251, 251, 255);
+        /* Aqui eu mostro que quando eu passar o mouse em cima o link vai ficar sublinhado e de outra cor*/
+    }
+    .x::after{
+        content:' ⇐';
+    }
+    .x::before{
+        content:'⇒ ';
+    }
+    p{
+        color: black;
+        text-align: center;
+       font-weight: bolder;
+       font-size: 30px;
+    }
+
+   </style>
+</head>
+<body>
+    <a href="./cap15.html"><img src="../midiaM2/volte.png" alt="voltar" width="30"></a>
+    <h1>Pseudo-elementos em CSS</h1>
+
+    <h1>personalizando Links</h1>
+
+    <ul>
+        <li><a class="x" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a class="x" href="https://pt-br.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a class="x" href="https://www.youtube.com/" target="_blank">You Tube</a></li>
+    </ul>
+    <main>
+        <h1>Simbolos que usamos nesse Capitulo para as CSS</h1>
+        <p>#  = ID</p>
+        <p>.  = Class</p>
+        <p>:  = Pseudo-Class</p>
+        <p>:: = Pseudo-Elementos</p>
+        <p>> = Clildren(o Filho)</p>
+
+    </main>
+    
+    <br><br><br><br><br>
+   
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/vMlrcOVr7po" title="Pseudo-elementos em CSS - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+    Tópicos deste vídeo: <br>
+    00:00​ – Módulo 02, Capítulo 15, aula 04<br>
+    00:15​ – O que aprendemos até aqui<br>
+    00:45​ – Onde hospedar seu site?<br>
+    02:29​ – Criando um novo exercício<br>
+    03:21​ – Criando uma lista com links<br>
+    04:21​ – Criando os estilos<br>
+    04:45​ – Pseudo-classe visited<br>
+    05:15​ – Retirando sublinhado dos links<br>
+    06:09​ – Pseudo-classe active<br>
+    07:47​ – Ajude a divulgar o curso<br>
+    08:23​ – Pseudo-elementos<br>
+    09:27​ – Adicionando conteúdos extras<br>
+    10:26​ – Links especiais com formatação por classe<br>
+    11:50​ – Uma breve revisão<br>
+    12:52​ – No próximo capítulo<br></p>
+</body>
+</html>

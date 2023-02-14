@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*
+    Paleta de cores
+    verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root{
+    --cor0:white;
+    --cor1:#49a09d;
+    --cor2:#5f2c82;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*Com essa parametro informamos que a borda faça parte da conta de largura*/
+    box-sizing: border-box;
+}
+body,html{
+    background-color: var(--cor2);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--cor0);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    /*Tudo que estiver fora da div fica escondido, usou essa função pois a imagem ficou com as pontas de fora, remova para ver*/
+    overflow: hidden;
+    /*Sombra*/
+    box-shadow: 0px 0px 10px black;
+}
+section#login > div#imagem{
+    display: block;
+    background: var(--cor2)  url('../Midia/pexels-max-avans-5075791.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    
+}

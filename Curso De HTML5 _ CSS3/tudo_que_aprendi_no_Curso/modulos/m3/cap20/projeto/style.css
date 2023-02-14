@@ -1,0 +1,88 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family:'Passion One' ;
+    src: url('midia/PassionOne-Regular.ttf');
+}
+
+:root{
+--fonte1:Arial, Helvetica, sans-serif;
+--fonte2: 'Passion One', cursiva;
+--fonte3: 'Sriracha', cursive;
+}
+header{
+    background-color: black;
+    padding: 30px;
+    
+}
+h1{
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 100px;
+    font-family:var(--fonte2);
+
+}
+header p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family:var(--fonte1);
+}
+header a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+article p{
+    line-height: 2em;
+    padding: 30px 10px 0px 20px;
+    font-family: var(--fonte3);
+    font-weight:bold;
+    font-size: 40px;
+    
+}
+.trasnparente{
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    max-width: 50%;
+}
+.juaninha{
+    padding:20px 10px 10px 10px;
+    background-color: black;
+    background-image: url('midia/juaninha.jpg');
+    background-position:center;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-size: cover;
+    height:700px;
+}
+.folha{
+    background: black url('midia/folha.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+    height: 700px;
+}
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding:10px;
+    font-family: var(--fonte1);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}

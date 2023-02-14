@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../estiloJS.css"> 
+    <title>Aula 09</title>
+</head>
+<body>
+     <main>
+       
+        <a href="../Curso_javas_cript.html"><img src="/imagens/volte.png" alt="voltar" width="30"></a>
+        <h1>Introdução ao DOM</h1>
+        <div>
+             <h1>Essa aula Foi Dificil, peço que pesquise mais sobre e veja mais vezes esse sobre esse módulo</h1>
+        <h2>Oque é <strong>Dom</strong>?</h2>
+        <p>O que é o DOM? O Document Object Model (DOM) é uma interface de programação para os documentos HTML e XML. Representa a página de forma que os programas possam alterar a estrutura do documento, alterar o estilo e conteúdo</p>
+        <h3>Arvore DOM (simplificado)</h3>
+        <img class="aula" src="../midia/moduloC/arvore_dom.png" alt="arvore">
+        <p>Podemos navegar da seguinte maneira, pegando como exeplo a arvore Dom(isso dentro da tag script)<br> <strong>window.document.html.body</strong></p>
+        <p>Esses são metodos de seleção com dom, com essas seleções mostraremos na tela as informações guardadas na variavel.</p>
+        </div>
+        <fieldset>
+            <legend>Exercicio</legend>
+            <p id="tx">Ola mundo</p>
+            <p>Isso é bem dificil</p>
+        </fieldset>
+        <script>
+
+        var d = window.document.getElementById('tx')
+        var a = window.document.querySelector('p#tx')
+        d.style.color = 'red'
+        d.innerText = 'não da certo, pois eu não sei como fazer issso comigo'
+        d.style.background = 'black'
+         window.document.write(d.innerText)
+         a.style.ba = 'yellow'
+         
+       
+    </script>
+    </main> 
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/WWZX8RWLxIk" title="Introdução ao DOM - Curso JavaScript #09" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

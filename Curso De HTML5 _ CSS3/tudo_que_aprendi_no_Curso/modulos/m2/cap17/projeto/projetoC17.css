@@ -1,0 +1,112 @@
+@font-face {
+    font-family:'droid';
+    src: url(../projeto/fontes/idroid.otf);
+}
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Modak & display=swap');
+body{
+    background-color:#83E1AD;
+    margin:0px 0px;
+    text-indent: 20px;
+}
+header{
+    /*
+    min-width: 300px;
+    max-width: 1360px;
+    
+    margin:-7px -7px 0px -8px;*/
+    padding-top: 10px;
+
+    background-image: linear-gradient(to top,#063D1E,#2FA866);
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.774);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display:flex;
+}
+ul{
+    padding-left:0;
+    font-weight: bolder;
+}
+li.botao{
+    display: inline;
+    margin: 2px 10px 2px 2px;
+    color: #83E1AD;
+}   
+li.botao:hover{
+    text-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#2FA866;
+    color: #07582a;
+}
+main{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    box-sizing: border-box;
+}
+article > h1{
+    font-family:'droid',Arial,sans-serif;
+    color: #07582a;
+}
+h2{
+    font-family:'droid',Arial,sans-serif;
+    font-size: 20PX;
+    font-weight: normal;
+    color: #09612f;
+    background-image: linear-gradient(to left,white,#83E1AD);
+    padding-left: 10px;
+}
+strong{
+    color: #38b16e;
+}
+a{
+    color: #38b16e;
+    font-weight: bolder;
+    text-decoration:none;
+}
+img{
+
+    margin:auto;
+    display:block;
+  
+}
+div{
+    margin: 0 auto;
+    background-color: #07582a;
+    color: white;
+    text-align: center;
+    padding: 200px;
+    box-sizing: border-box;
+}
+aside{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+section{
+    background-color: #aff7d0d0;
+    padding:10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.extra{
+    margin: 0 auto;
+    background-color: #38b16e;
+    color: white;
+    padding: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+footer{
+    background-color: rgb(6, 95, 6);
+    color: white;
+    text-align: center;
+    padding: 1px 0px;
+    margin-top: 20px;
+}

@@ -1,0 +1,3 @@
+é um protocolo, quer organiza os dados que são mandados pela internet, o TCP, quebra os paotes
+e enviar por varios caminhos, eo IP, indentifica de onde veio e para onde vai todos pacotes
+enviados.

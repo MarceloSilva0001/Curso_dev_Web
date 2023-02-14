@@ -1,0 +1,72 @@
+p{
+    color: black;
+}
+strong{
+    color: blue;
+}
+header{
+    border-radius: 10px;
+    background-color: black;
+   
+}
+li{
+    color: white;
+}
+header > h1{
+    background-color:magenta;
+    border-top-left-radius: 10px;
+    font-style: italic;
+    color: white;
+
+}
+nav{
+    margin: 10px;
+    padding: 5px;
+    border: 1px;
+}
+nav > ul{
+    background-color: rgb(167, 158, 158);
+    margin: 10px 10px;
+    border: 10px 10px;
+    padding: 10px 10px;
+    box-shadow: 1px 0px 5px 5px magenta;
+}
+button{
+    margin-left:30px;
+    background-color:rgb(138, 0, 138);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    color: white;
+}
+button:hover{
+    margin-left:30px;
+    background-color:magenta;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    border-color:magenta;
+}
+footer >p{
+    text-align: center;
+    padding: 10px;
+    background-color:magenta;
+   color: white;
+    border-bottom-right-radius: 10px;
+}
+section >ul{
+    background-color: rgb(138, 0, 138);
+    padding: auto 10px auto 0px;
+    margin: auto 10px auto 10px;
+    box-shadow: 1px 0px 5px 5px magenta;
+}
+ul >h1{
+    font-size: 30px;
+    color: white;
+}
+

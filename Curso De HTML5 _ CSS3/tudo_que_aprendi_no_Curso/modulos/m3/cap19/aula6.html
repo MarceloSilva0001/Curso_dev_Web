@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 6</title>
+    <style>
+        body{
+            height: 100vh;
+            /*
+            background-color: blue;
+            background-image: url('../midiaM3/imaFundo/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+            shorthand-background
+                color > image > position > repeat > {size} > attachment
+            */
+
+            background: blue url('../midiaM3/imaFundo/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+            margin: auto;
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        
+        strong{
+            color:blue;
+        }
+        strong.red{
+            color: red;
+        }
+        .green{
+            color:green;
+        font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap19.html"><img src="../midiaM3/volte.png" alt="volte" width="30"></a>
+    <main>
+        <h1>Background-attachment e shorthand</h1>
+        <p><strong></strong></p>
+        <p></p>
+
+            <p><strong>-background-color:<br> </strong> blue;<br> <strong class="red">Muda a cor de fundo</strong></p>
+
+            <p><strong>-background-image:  <br></strong>url('../midiaM3/imaFundo/wallpaper002.jpg');<br><strong class="red">Sobe ao imagem ao fundo da div ao site</strong></p>
+
+            <p><strong>-background-position: <br> </strong>center center;<br><strong class="red">Posiciona a imagem a um ponto de ancoragem, que seria o ponto fixo dela</strong></p>
+
+            <p><strong>-background-repeat:<br> </strong> no-repeat;<br><strong class="red">Informa que a imagem ou declaração não deve se repetir.</strong></p>
+
+            <p><strong>-background-attachment: <br> </strong>fixed;<br><strong class="red">A imagem deve se fixar ao fundo, com isso só o conteúdo semantico ou div normal se move na rolagem do site, com isso a imagem se ajusta de acordo com o redimencionamento da tela </strong></p>
+
+            <p><strong>-background-size:<br> </strong> cover;<br><strong class="red"> A imagem vai ter o tamanho da vh(viewport) do site, que seria o tamanho da janela aberta seja minimiza ou inteira</strong></p>
+
+            <h2>ShortHand</h2>
+            <p>shorthand, seria a declaração do código de uma forma mais enxuta, como vimos nos outros exemplos dos modulo 2 em box model, aqui nesse exempli, somente o paramentrô <strong>background-size: cover;</strong> não funciona dentro da shortHando, deve ser declarado de fora.</p>
+
+            <p>- Exempplo do shorthand <strong>background: blue url('../midiaM3/imaFundo/wallpaper002.jpg') center center no-repeat fixed;
+                background-size: cover;</strong></p>
+
+            <p class="green">- Ordem do shorthand: color > image > position > repeat > attachment</p>
+
+       
+
+    </main>
+    <br><br>
+    <iframe width="733" height="412" src="https://www.youtube.com/embed/PzJwwA6LVts" title="background-attachment e shorthand - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

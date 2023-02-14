@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12</title>
+    <link rel="shortcut icon" href="../midiaM2/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        p{
+            color: black;
+            margin: 30px;
+            text-align: justify;
+        }
+        strong{
+            color: blue;
+        }
+        div.video{
+            background-color: blue;
+            margin: 0px -10px 30px -10px;
+            padding:20px;
+            position: relative;
+            padding-bottom: 57%;
+        }
+        div.video > iframe{
+          position: absolute;
+            top:25%;
+            left: 5%;
+            height:70%;
+            width: 90%;
+        }
+        .video h1{
+            color: aliceblue;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <a href="./cap17.html"><img src="../midiaM2/volte.png" alt="voltar" width="30"></a>
+    <h1>Tornando um vídeo responsivo</h1>
+      <main>
+        <p>Nessa aula veremos como Deixar um video do YouTube ou outro video externo que usamos códido de incorporação, responsivo dentro do nosso site</p>
+        <p>1. O video precisa colocar o inframe dentro de uma <strong>Div</strong>, verifique se ele está com a altura e largura padrão que o You tube entrega quando pegamos o código de incorporação <strong>(width="560",height="315")</strong>.</p>
+        <p>2. Coloque uma class dentro dessa div, pois se futuramente precisar colocar outro video dentro do site, ela já virá com essa configuração responsiva.</p>
+        <p>3. Dentro do Css você deve fazer duas declarações para que a responvida do video incorporado possa funcinar, <strong>div.nomeClass{}</strong> e <strong>div.nomeClass > inframe{}</strong>, dentro dessas duas declarações que vamos montar os atributos para a resposividade</p>
+        <p>4. Dentro de <strong>div.nomeClass{}</strong>, vamos trabalhar o fundo, que seria a cor de fundo, margin e padding da caixa caixa da div, para se encaixar ao main, dentro iremos usar a declaração <strong>position: relative;</strong> e <strong> padding-bottom: 57%;</strong></p>
+        <p>5. Dentro de <strong>div.nomeClass > inframe{}</strong>, vamos trabalhar dentro do iframe que esta dentro dessa class, configurando altura,largura, esquerda e topo do código com porcentagem, dentro iremos usar essas declarações <strong>position: absolute;</strong>, <strong>top:25%;</strong>, <strong>left: 5%;</strong>, <strong>height:70%;</strong>, <strong>width: 90%;</strong></p>
+
+        <p>6. As configurações de porcentegem das medidas, é relativa ao tamanho da caixa que a div está, aqui estamos testando dentro da main, que foi padronizado uma medida, caso ficar fora da medida no seu código, você pode ajustar, aumentard ou diminuindo os valores de altura e lagura, e os demais também, sempre faça testes e vefique os códigos.</p>
+
+        <div class="video">
+            <h1>You Tube, esse Video Está responsivo</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u9NE0jInb_c" title="Tornando um vídeo responsivo - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+      </main>
+    
+</body>
+</html>

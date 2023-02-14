@@ -1,0 +1,7 @@
+*COMANDOS
+- Quebra de Linha, <br>
+- &lt; ola mundo &gt;, <ola mundo>, &lt;-> "<",  &gt; -> ">"
+
+*ANOTAÇÕES
+
+*DICAS

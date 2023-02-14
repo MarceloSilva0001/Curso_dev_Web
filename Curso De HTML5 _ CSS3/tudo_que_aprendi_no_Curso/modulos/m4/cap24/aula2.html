@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 02</title>
+</head>
+<body>
+    <a href="cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Usar Label vai melhorar seus formulários</h1>
+    <main>
+        <article>
+            <p>Nessa aula, estamos amarrando o nomos dos campos ao inputs dos campos, ex o "nome" está ligado ao input dele, é muito importante para que os navegadores vejam a relevancia na hora de verificar nosso site para mostrar ao usuario o campo que pertencia ao input, por isso envelopamos o nome do campo com a tag <strong>label</strong>, dentro dela tem um <strong>"for"</strong> que colocamos o <strong>id</strong> do input pra amarrar os dois, abra o código e veja os exemplos.</p>
+            <p></p>
+        </article>
+        <hr>
+        <form action="cadastro.php">
+            <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome"></p>
+
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+        <hr>
+        <p><strong>action</strong> fica dentro da tag de formulario e serve para enviar o formulario, "exemplo.php"</p>
+        <form action="dados.php">
+           
+            <p> <label for="iend">Endereço:</label><input type="text" name="endereco" id="iend"></p>
+
+            <p><label for="datanascimento">Data de Nascimento:</label> <input type="date" name="datanacimento" id="datanascimento"></p>
+            <p><input type="submit" value="enviar"></p>
+            
+        </form>
+    </main>
+    <br>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/MqdSffM1HZc" title="Usar Label vai melhorar seus formulários - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

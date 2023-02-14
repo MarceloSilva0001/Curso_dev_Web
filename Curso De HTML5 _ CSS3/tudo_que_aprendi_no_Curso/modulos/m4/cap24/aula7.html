@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 07</title>
+
+</head>
+<body>
+    <a href="./cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Formulários com telefone e e-mail</h1>
+    <main>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="cadastro" method="get">
+                <p><label for="id_email">Email:<input type="email" name="email" id="id_email" required placeholder="EX: nome@gmail.com"></label></p>
+                <p><label for="id_telefone">Telefone:</label><input type="tel" name="telefone" id="id_telefone" required placeholder="(xx) x xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}\d{4}$" v></p>
+                <p><input type="reset" value="Limpar"><input type="submit" value="Enviar"></p>
+            </form>
+        </fieldset>
+        <hr>
+        <h2>Bloco de dados</h2>
+        <p>Acima fizemos uma separação de bloco de dados do formulario, usando a tag <strong>Fieldset</strong> dentro da tag colocamos o form, abra o código e veja, para a informação do bloco indicando os "Dados pessoais" usamos a tag <strong>Legend</strong> que possobilita colocar o nome naquela base.</p>
+        <h2>Controles de Email e de Telefone</h2>
+        <p>O controle de  <strong>email</strong> impede que o usuario coloque dados sem o "@"a trava dele é apenas essas</p>
+        <p>o Controle de Telefone é bem simples porem é uma forma semantica para os navegadores, com isso tem sentido, não tem travas por padrão porém colocamos algumas abrindo o código você pode ver, foi usado o metodo de RegEx, não estudamos nessa aula mais fizemos para travar o campo.</p>
+    </main>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/SRMEHklQC4M" title="Formulários com telefone e e-mail - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

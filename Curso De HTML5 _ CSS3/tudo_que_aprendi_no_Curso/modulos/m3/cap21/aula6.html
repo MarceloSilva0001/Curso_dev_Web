@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        div{
+            margin-top: 10px;
+        }
+        table{
+            margin: auto;
+            position: relative;
+        }
+        thead,tfoot{
+            background-color: black;
+            color: white;
+            
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: black;
+        }
+        tr,td,th{
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        tbody > tr:nth-child(odd){
+            background-color:rgba(0, 0, 0, 0.219);
+            color: white;
+        }
+        tbody > tr:nth-child(even){
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap21.html"><img src="../midiaM3/volte.png" alt="voltar" width="30"></a>
+    <h1>Efeito Zebrado na tabela com HTML e CSS</h1>
+    <main>
+        <h2>Efeito zebrado</h2>
+        <p>O efeito zebrabdo é aquela formatação nas linhas da tabela, uma linha tem cor outra não, dando efeito de "cor sim, cor não"</p>
+        <p>Para o efeito vamos usa uma pseudo classe, <strong>:nth-child(2n)</strong>, esse dois que está dentro dela é para indica quantas linhas queremos que pule no efeito, se colocar mais pula mais, faça testes.</p>
+        <p>exemplo: <strong>tbody >tr:nth-child(2n){parametros de cor}</strong> O "tbody" é o conteudo da tabela onde queremos o efeito, com isso só afeta nossa contéudo, "tr" são as linhas para que o efeito aplique nas linahs da tabela, e ":nth-child(valor n)" é a pesseudo classe que faz o efeito zebrabrado</p>
+        <p>podemos fazer o efeito zebrado com duas cores, com isso precismos declarar <strong>tbody >tr:nth-child(odd){parametros de cor}</strong> para cores ipar e <strong>tbody >tr:nth-child(even){parametros de cor}</strong> para as cores pares, mas da pra fazer varias declrações deixando o par e o inpar com fontes diferentes e cores da letra também, basta apenas declarar dentro da pesseudo classe que vai receber o parametrê da mudança</p>
+        <img src="../midiaM3/zebrado.png" alt="código css" width="100%">
+        <hr>
+        <h2>Congelamento de linha</h2>
+        <p>Precisamos colocar dentro da <strong>table{posotion:relative;}</strong> Depois devemos mostrar o caminho da linha que vai ser fixada, <strong> thead > tr > th{position:stick; top:-1px; background-color: cor que já estava antes no cabeçalho}</strong></p>
+    </main>
+    <div>
+        <table>
+            <caption></caption>
+            <thead>
+                    <tr>
+                        <th>Pais</th>
+                        <th>Poulação</th>
+                        <th>extensão territorial</th>
+                        <th>Riquesa PIB</th>
+                        <th>Idade Média</th>
+                    </tr>
+            </thead>
+            <tfoot>
+                    <tr>
+                        <th>10</th>
+                        <th>P?</th>
+                        <th>E?</th>
+                        <th>R?</th>
+                        <th>I?</th>
+                    </tr>
+            </tfoot>
+            <tbody>
+                    <tr>
+                        <td>China</td>
+                        <td>1.426.000.000</td>
+                        <td>9.596.961 km2</td>
+                        <td>17,73 trilhões USD (2021)</td>
+                        <td>38,4</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Índia</td>
+                        <td>1.412.000.000</td>
+                        <td>3,173 trilhões USD (2021)</td>
+                        <td>3,173 trilhões USD (2021)</td>
+                        <td>28,7</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Estados Unidos</td>
+                        <td>337.000.000</td>
+                        <td>9.371.174 km2</td>
+                        <td>23 trilhões USD (2021)</td>
+                        <td>38,5</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Indonésia</td>
+                        <td>275.000.000</td>
+                        <td>1.904.569 km2</td>
+                        <td>1,186 trilhão USD (2021)</td>
+                        <td>31,1</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Paquistão</td>
+                        <td>234.000.000</td>
+                        <td>796.095 km²</td>
+                        <td>346,3 bilhões USD (2021)</td>
+                        <td>22,23</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Nigéria</td>
+                        <td>216.000.000</td>
+                        <td>923.768 km²</td>
+                        <td>440,8 bilhões USD (2021)</td>
+                        <td>18,6</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Brasil</td>
+                        <td> 215.000.000</td>
+                        <td>8.515.767 km2</td>
+                        <td>1,609 trilhão USD (2021)</td>
+                        <td>33,2</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Bangladesh</td>
+                        <td>170.000.000</td>
+                        <td>148.460 km²</td>
+                        <td>416,3 bilhões USD (2021)</td>
+                        <td> 27,9</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Rússia</td>
+                        <td>145.000.000</td>
+                        <td>17.098.246 km2</td>
+                        <td>1,776 trilhão USD (2021)</td>
+                        <td>40,3</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>México</td>
+                        <td>127.000.000</td>
+                        <td>1.964.000 km²</td>
+                        <td>1,293 trilhão USD (2021)</td>
+                        <td>29,3</td>
+                        
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+    <iframe width="694" height="390" src="https://www.youtube.com/embed/IYUiFRE5hpI" title="Efeito Zebrado na tabela com HTML e CSS;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

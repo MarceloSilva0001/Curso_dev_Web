@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 04</title>
+</head>
+<body>
+    <a href="cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Criando caixas de texto e de senha</h1>
+    <main>
+        <h2>Campo de preenchimento Obrigatório</h2>
+        <p>Podemos tornar um campo de preenchimento obrigatório, dessa forma o formulario não será enviado sem dados faltando, dentro da tag de <strong>input</strong> colocamos no final o comando <strong>riquired</strong> para força o preenchimento.</p>
+        <h2>Quantidade minima e máxima de letras</h2>
+            <p>Dentro ainda da tag de <strong>input</strong> colocamos a função <strong>minlength="quantidade minima"</strong> EX: <strong>="5".</strong> <br>Para coloca quantidade maxima usando também dentro da tag <strong>input</strong> a função <strong>maxlength="5"</strong></strong></p>
+        <h2>Campo de preenchimento com informação</h2>
+        <p>Dentro da caixa podemos inficar oque deve ser preenchido, colocando a função <strong>placeholder="nome do usuario"</strong> essa função é colocado dentro da tag de <strong>input</strong> olhe os exemplos abaixo.</p>
+        <h2>Completação automatica de campos</h2>
+        <p>Quando preenchemos dados em vario sites, muitas vezes os navegadores salvam nossas informações, com isso geralmente quando vamos preencher um formulario em um site os dados como nome, numero telfone ou até senha de login, salvam, para que nosso site possa dar essa facilida ao usuario, usamos a função de <strong>autocomplete="on"</strong> dentro da tag de formulario, e para o naveador informar corretamente o dadom dentro da tag de preenchimento <strong>input</strong> devemos identificar oque vai ser preenchido, no caso de um campo de nome colocamos <strong>autocomplete="username"</strong> campo de senha <strong>autocomplete="new-password"</strong>, porem o próprio VS code mostra todas as opções de auto complete que podemos usar.</p>
+        <hr>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p><label for="idnome">Nome:</label><input type="text" name="nome" id="idnome" required minlength="5" maxlength="10" placeholder="Digite seu nome aqui" autocomplete="username"></p>
+
+            <p><label for="idsobrenome">Sobrenome:</label><input type="text" name="Sobrenome" id="idsobrenome" required placeholder="Digite seu sobrenome aqui" autocomplete="name"></p>
+
+            <p><label for="idsenha">Senha:</label><input type="password" name="senha" id="idsenha" required autocomplete="new-password"></p>
+            
+            <p>
+                <input type="reset" value="Limpar dados">
+
+                <input type="submit" value="Enviar">
+           </p>
+
+        </form>
+    </main>
+    <br>
+</body>
+</html>

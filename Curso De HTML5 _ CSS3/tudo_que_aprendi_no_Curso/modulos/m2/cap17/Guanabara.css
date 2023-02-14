@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'Android';
+    src: url('projeto/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0:#ebe5c5;
+    --cor1:#83e1ad;
+    --cor2:#3dd184;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    --fonte-padrao:arial,verdana,helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+    
+}
+*{
+    /* Quando essa função de "*{}"toda função que colocamos dentro dela se aplica para a toda a página, aqui em baixo estámos dizendo que não é para ter margin e nem borda, sem essa declaração por padrão todas as caixas vem com margin ou borda,  */
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header{
+   background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
+    min-height: 150px;
+}
+header h1{
+    color: white;
+    font-family:'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+}
+header h2{
+    color:var(--cor3);
+    font-weight: normal;
+}
+header > p{
+    color: white;
+    text-align: center;
+    padding:15px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+}
+nav{
+    background-color: var(--cor5);
+    padding: 15px;
+    box-shadow: 1px 20px 23px -11px black;
+}
+nav > a{
+    text-decoration: none;
+    color: var(--cor1);
+    margin-right: 15px;
+    font-weight: bold;
+    padding:10px;
+    border-radius:10px;
+}
+nav > a:hover {
+    background-color:var(--cor1);
+    color:var(--cor5);
+    transition-duration: 0.4s;
+}
+main{
+    background-color: white;
+    margin: auto;
+    min-width:300px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px ;
+    padding: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+ main img{
+    width:100%;
+
+}
+main  h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+}
+main  h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 20px;
+    background-image: linear-gradient(to right,var(--cor1),white);
+    padding-left: 15px;
+}
+main img.pequena{
+
+        display: block;
+        max-width: 350px;
+        margin: auto;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+main strong{
+    color: var(--cor3);
+}
+main a{
+    text-decoration:none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-image: linear-gradient(to left, var(--cor0),var(--cor1));
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+aside{
+    padding: 0px 30px 30px 30px;
+    background-color:var(--cor1);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+h3{
+    background-color: var(--cor4);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    font-size: 16px;
+}
+aside p{
+    margin: 0;
+    padding-top: 10px;
+}
+aside ul{
+    list-style-type:'\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+footer a {
+    color:white;
+    text-decoration: none;
+    color: var(--cor1);
+}
+footer a:hover{
+    text-decoration:underline;
+    color:rgb(245, 68, 68);
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding:20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe{
+   position: absolute; 
+   top:5%;
+   left: 5%;
+   height:90%;
+   width: 90%;
+
+
+}

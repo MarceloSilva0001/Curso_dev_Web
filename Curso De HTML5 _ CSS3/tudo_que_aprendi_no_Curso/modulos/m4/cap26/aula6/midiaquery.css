@@ -1,0 +1,60 @@
+@charset "UTF-5";
+/*Versão geral*/
+/*
+Typical device breakpoints
+pequenas telas até 600px
+Celular: de 600px até 768px
+tablet: de 768px até 992px
+Desktop:de 992px até 1200px
+Grandes telas: acima de 1200px
+smartWatch:
+*/
+:root{
+    --cor0:white;
+    --cor1:#49a09d;
+    --cor2:#5f2c82;
+    --cor3:#4DB1F0;
+    --cor4:#146CA3;
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        background-image:linear-gradient( to bottom, var(--cor3),var(--cor4));
+    }
+    section#login{
+        width:70vw;
+        height: 300px;
+    }
+    section#login > div#imagem{
+        background-image: url('../Midia/pexels-max-avans-5075791.jpg');
+        background-position: center bottom;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}
+@media screen and (min-width:992px){
+    body{
+        background-image:linear-gradient( to bottom, var(--cor3),var(--cor4));
+    }
+    section#login{
+        width: 70vw;
+        height: 300px;
+    }
+    section#login > div#imagem{
+        background-image: url('../Midia/pexels-max-avans-5075791.jpg');
+        background-position: center bottom;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}

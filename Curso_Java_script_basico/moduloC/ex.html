@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area,div#mouse,div#sair{
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: green;
+            color:white;
+            border-radius:10px;
+            margin: 10px;
+            width: 200px;
+            height: 50px;
+            line-height:50px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="Clicar()">
+        <p>Disponivel</p>
+    </div>
+
+    <div id="mouse" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Dentro</p>
+    </div>
+
+    <hr>
+
+    <script>
+        
+        function Clicar(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Indisponivel'
+            a.style.background = 'red'
+        } 
+        function entrar(){
+            var a = window.document.getElementById('mouse')
+            a.innerText = 'Fora'
+            a.style.background = 'red'
+        }
+        function sair(){
+            var a = window.document.getElementById('mouse')
+            a.innerText = 'Dentro'
+            a.style.background = 'blue'
+        }
+</script>
+</body>
+</html>

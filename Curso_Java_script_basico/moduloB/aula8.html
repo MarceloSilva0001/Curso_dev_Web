@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estiloJS.css">
+    <title>Document</title>
+    <style>
+        img.aula{
+            width: 200px;
+        }
+        img.ex{
+            width:100%;
+        }
+        span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="../Curso_javas_cript.html"><img src="/imagens/volte.png" alt="voltar" width="30"></a>
+        <h1>Operadores (Parte 2)</h1>
+        
+            <div>
+            <p>Alguns operadores  que são os sequintes:</p>
+            <h3>Operadores</h3>
+                <ul>
+                    <li>Aritméticos</li>
+                    <li>Atribuição</li>
+                    <li>Relacionais</li>
+                    <li>Lógicos</li>
+                    <li>Ternário</li>
+                    <p>Obs: Existem mais, porem no curso iremos ver sobre esses.</p>
+                    <p>Nessa aula, iremos focar em dois, <strong>Relacionais, Lógicos e Ternário.</strong></p>
+                    <hr>
+            <h2>Operdadores Relacionais</h2>
+                <ul>
+                    <li><strong>> </strong>: Maior que</li>
+                    <li><strong>< </strong>: Menor que</li>
+                    <li><strong>>=</strong>: Maior ou Igual</li>
+                    <li><strong><=</strong>: Menor ou Igual</li>
+                    <li><strong>==</strong>: Igual</li>
+                    <li><strong>!= </strong>: Diferente</li>
+                    <li><strong>=== </strong>: Identico, exemplo: 10 == 10: true(veradeiro), 'marcelo' === 'Marcelo':false, 5 === '5':false(falso)</li>
+                </ul>
+                <hr>
+            <h2>Operadores Lógicos</h2>
+            <img class="aula" src="../midia/Operadores_logicos.png" alt="operadorLogicos">
+            <img class="aula" src="../midia/operador_negacao.png" alt="operadronegacao">
+            <img class="aula" src="../midia/operador_conjucao.png" alt="operadroConjuncao">
+            <img class="aula" src="../midia/operador_disjuncao.png" alt="operadroDisjuncao">
+            <ul>
+                <li><strong>!</strong>: Negação, quer dizer não</li>
+                <li><strong>&&</strong>: Conjução, seria o E logico exemplo, se x == a && c > a, a expressão é</li>
+                <li><strong>||</strong>: Disjunção, Seria o OU, se a == b || a < b, resultador, se a expressão</li>
+            </ul>
+            <h3>Ordem de precendecia dentro de uma conta</h3>
+            <p>Vamo fazer uma conta com esses operadores, porem precisamos saber qual é a ordem de procencia, que seria por onde a conta começa</p>
+            <p>8 > 5 && 7 % 2 == 0</p>
+            <p>Quanto temos Operadores aritiméticos, relacionais e lógicos na mesma expressão, a order é a seguinte:</p>
+            <p>1° Fazemos a conta de todos operadores aritiméticos <br>2° Depois fazemos os operadores relacionais(seguinte a ordem de procencia deles) <br>3° Por ultimo fazemos os operadores lógicos</p>
+            <p>Obs: Caso não entenderm veja a aula que está abaixo, no Minuto 23:00</p>
+            <h3>Ordem de precendecia só tendo operadores Lógicos</h3>
+            <p>1° <strong>!</strong><br>2°<strong>&&</strong><br>3°<strong>||</strong></p>
+            <img class="ex"src="../midia/Exeplo_a8.png" alt="exeplo">
+            <hr>
+            <h2>Operador ternário</h2>
+            <ul>
+                <li><strong>?</strong>:</li>
+                <li><strong>:</strong>:</li>
+                <img class="ex" src="../midia/ternario_operador_faseTreue.png" alt="ternari">
+                <img class="ex" src="../midia/operador_ternario.png" alt="ternario">
+                <p>Em uma forma simples de explicar, é como se fosse aquele metodo das planilhas que mostra que se o valor for igual a x, vocês negativo</p>
+                <p>Exemplo: a Média para passar na escola é 6, o aluno tirou A tirou nota 5.6 e o aluno B tirou 8.5, Como fazemos uma conta no JS pra identificar quem passou?</p>
+                <p><strong>Aluno A:</strong> <br> <span>media >= NotaA ? 'aprovado : 'Reprovado'</span> <br> Aluno A:Reprovado <br></p>
+            
+                <p><strong>Aluno B:</strong> <br> <span>media >= NotaB ? 'aprovado : 'Reprovado</span>' <br> Aluno A:Aprovado</p>
+            </ul>
+            </div>
+    </main>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/BP63NhITvao" title="Operadores (Parte 2) - Curso JavaScript #08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

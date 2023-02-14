@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="../midiaM2/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        p{
+            color: black;
+        }
+        strong{
+            color: blue;
+        }
+        header{
+            border-radius: 10px;
+            background-color: black;
+           
+        }
+        li{
+            color: white;
+        }
+        header > h1{
+            background-color: aqua;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        nav{
+            margin: 10px;
+            padding: 5px;
+            border: 1px;
+        }
+        nav > ul{
+            background-color: rgb(167, 158, 158);
+            margin: 10px 10px;
+            border: 10px 10px;
+            padding: 10px 10px;
+            box-shadow: 2px 2px 5px aqua;
+        }
+        button{
+            margin-left:30px;
+            background-color: rgb(6, 122, 117);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            border-radius: 5px;
+            height: 40px;
+            width: 90px;
+            color: white;
+        }
+        button:hover{
+            margin-left:30px;
+            background-color: rgb(29, 216, 207);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            border-radius: 5px;
+            height: 40px;
+            width: 90px;
+            color: white;
+            border-color: aquamarine;
+        }
+        footer >p{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(0, 245, 245);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        section >ul{
+            background-color: rgb(6, 122, 117);
+            padding: auto 10px auto 0px;
+            margin: auto 10px auto 10px;
+            box-shadow: 2px 2px 5px aqua;
+        }
+        ul >h1{
+            font-size: 30px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <a href="./cap16.html"><img src="../midiaM2/volte.png" alt="voltar" width="30"></a>
+
+    <main>
+        <h1>Grouping Tags em HTML5</h1>
+        <p><strong>Header</strong>- A Header tag, que significa “cabeçalho” em português, também é conhecida como Heading tag, ou “intertítulos”. O principal objetivo é definir tópicos dentro do texto, mas seus benefícios vão além da formatação. Título - é a Header tag de um conteúdo</p>
+        <p><strong>Main</strong>- O elemento <strong>(&ltmain&gt)</strong> define o conteúdo principal dentro do <body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação</p>
+        <p><strong>Footer</strong>- indica qual é o rodapé daquele contexto em que a tag se encontra. Por exemplo, se for geral da página, pode conter informações de contato, copyright, navegação etc; se estiver dentro de uma <strong>(&ltarticle&gt)</strong>, é um rodapé daquele elemento, então, semanticamente, está vinculada a esta seção</p>
+        <p><strong>Nav</strong>- O Elemento HTML de Navegação ( &lt nav &gt ) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação</p>
+        <p><strong>Section</strong>- O elemento HTML <strong>&ltsection></strong> representa uma seção genérica contida em um documento HTML, geralmente com um título, quando não existir um elemento semântico mais específico para representá-lo</p>
+        <p><strong>Article</strong>- O Elemento HTML Article <strong>(&ltarticle>)</strong> representa uma composição independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em sindicação.</p>
+        <p><strong>Aside</strong>- O elemento HTML <strong>&ltaside></strong> representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo. Essas seções são, muitas vezes, representadas como barras laterais.</p>
+    </main>
+    <hr>
+    <header>
+        <h1>Exemplo de Site</h1>
+        <nav>
+            <ul>
+                <button>Facebook</button>
+                <button>You Tube</button>
+                <button>Instagram</button>
+                <button>Twitter</button>
+            </ul>
+            <section>
+                <ul>
+                    <h1>Lista Fácil</h1>
+                    <li>Jogos</li>
+                    <li>Filmes</li>
+                    <li>Esporte</li>
+                    <li>Estudos</li>
+                </ul>
+            </section>
+        </nav>
+            <footer>
+                <p>Feito por Marcelo</p>
+            </footer>
+    </header>
+    
+     
+    <br><br><br> <br><br>
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/JPMm-jyKOaM" title="Grouping Tags em HTML5 - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

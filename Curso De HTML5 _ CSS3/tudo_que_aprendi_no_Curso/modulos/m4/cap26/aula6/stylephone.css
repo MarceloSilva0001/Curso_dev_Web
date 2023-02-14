@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*
+    Paleta de cores
+    verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root{
+    --cor0:white;
+    --cor1:#49a09d;
+    --cor2:#5f2c82;
+    --cor3:#4DB1F0;
+    --cor4:#146CA3;
+    --cor5:black;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*Com essa parametro informamos que a borda faça parte da conta de largura*/
+    box-sizing: border-box;
+}
+body,html{
+    /*
+    background-image:linear-gradient(to bottom,var(--cor4),var(--cor3)); */
+    background:var(--cor3);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background-color: var(--cor0);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    /*Tudo que estiver fora da div fica escondido, usou essa função pois a imagem ficou com as pontas de fora, remova para ver*/
+    overflow: hidden;
+    /*Sombra*/
+    box-shadow: 0px 0px 10px black;
+    /* Quando mudar a largura da tela, a section vai fazer uma mudança de estado nesse intervalo de tempo*/
+    transition: width 0.5s, height 0.5s;
+    /*Suavizar a trasição durante a transição*/
+    transition-timing-function: ease;
+    transform: translate(-50%,-50%);
+}
+section#login > div#imagem{
+    display: block;
+    background: var(--cor4)  url('../Midia/programing.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    
+}
+div#formulario > h1{
+    text-align: center;
+    padding: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
+}
+section#formulario > form > div#email{
+    margin:10pz;
+}
+span{
+    color:var(--cor0);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+form > div.campo{
+    background-color: var(--cor4);
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    margin: 5px 0px ;
+    border: 1px solid var(--cor4);
+}
+div.campo > input{
+    background-color:var(--cor3);
+    border-radius: 6px;
+    color: var(--cor0);
+    font-size: 0.8em;
+    width: 80%;
+    height: 94%;
+    border: none;
+    text-align: center;
+    transform: translateY(-12%);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
+/*Essa declaração era para deixar o input do botão mais bonito*/
+form > input[type=submit]{
+    display: block;
+    font-size: 1.em;
+    width: 100%;
+    height: 30px;
+    background-color:var(--cor4);
+    color: var(--cor0);
+    border: none;
+    border-radius: 5px;
+}
+form > input[type=submit]:hover{
+    background-color:var(--cor3);
+}
+form >a.botao{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor5);
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    padding-top: 2px;
+}
+form >a.botao:hover{
+    background-color: var(--cor3);
+    color: var(--cor0);
+}
+form >a.botao > span#esqsenha{
+   color: black;
+   font-size: 1em;
+}

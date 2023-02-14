@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 07</title>
+    <style>
+        iframe.video{
+            width: 90vw;
+            height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <a href="cap22.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Tornando iframes mais seguros</h1>
+    <main>
+        <p>Para dar maior proteção ao uso dos iframes exrternos, podemos colocar uma configuração chamada, <strong>sandbox="sandbox"</strong>, esse parametro dentro da tag iframe, impede que o site colete informações para ele, com isso o usuario não consegue colocar as informações direto por esse iframe, ele só é exebido.</p>
+        <p>Usamos também para mais proteção, <strong>referrerpolicy="no-referrer</strong> Quando coloca essa parametro dentro da tag, informarmamos que oque está carregado dentro do iframe, não vai coletar nenhuma informação do usuario que está em acesso nessa páginas</p>
+        <p>Essas duas configurações protegem o iframe, externo, em nivel maximo que consegue fazer.</p>
+        <p>Para Ifrmes que estão dentro do nosso servidor, e são nossas e conhecemos, podemos colocar seguraça um pouco menos restrita, usando o parmetro dentro da tag, <strong>sandbox="allow-same-origin</strong> uma iframe que seja de origem local.</p>
+        <iframe src="extras/exA7.html" sandbox="allow-same-origin" referrerpolicy="no-referrer"></iframe>
+
+        <h2>Um pouco de Java escrip e Iframe</h2>
+        <iframe src="extras/ex2A7.html" ></iframe>
+    </main>
+    <br>
+    <iframe class="video" width="694" height="390" src="https://www.youtube.com/embed/mRhjlDN4Ezo" title="Tornando iframes mais seguros - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+</body>
+</html>

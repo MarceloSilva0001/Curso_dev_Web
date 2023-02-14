@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Aula 08</title>
+</head>
+<body>
+    <a href="./cap24.html"><img src="../midiaM4/volte.png" alt="voltar" width="30"></a>
+    <h1>Checkbox e Radio button em HTML</h1>
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados</legend>
+                <p><label for="id_sexomas">Masculino:</label><input type="radio" name="sexo" id="id_sexomas"></p>
+
+                <p><label for="id_sexofem">Femenino:</label><input type="radio" name="sexo" id="id_sexofem" checked></p>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                
+                <p><input type="checkbox" name="futebel" id="id_futebol"> <label for="id_futebol" >Futebol</label></p>
+
+                <p><input type="checkbox" name="natacao" id="id_Natacao" checked><label for="id_Natacao">Natação</label></p>
+
+                <p><input type="checkbox" name="volei" id="id_volei"><label for="id_volei">Volei</label></p>
+
+            </fieldset>
+            <p>
+                <input type="reset" value="Limpar"> <input type="submit" value="Enviar">
+            </p>
+            <hr>
+            <h2>Caixas pré marcadas</h2>
+            <p>Algumas informações do checkbox podemos deixar marcadas por padrão, para isso, podemos colocar dentro do input de checkbox o comando <strong>checked</strong>.</p>
+
+            
+        </form>
+    </main>
+
+    <iframe width="780" height="439" src="https://www.youtube.com/embed/iGDHFa4znHE" title="Checkbox e Radio button em HTML - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
