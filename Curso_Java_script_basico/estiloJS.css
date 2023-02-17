@@ -67,7 +67,10 @@ strong{
     color: red;
 }
 img.aula{
-    width: 200px;
+    width: 35vw;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 img.ex{
     width:100%;
