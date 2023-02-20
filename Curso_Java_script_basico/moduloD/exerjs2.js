@@ -9,7 +9,7 @@ function carregar(){
     var data = new Date()
 
     //"data.gethours" quanto colocamos a varaivel data. ela tras algumas opções, uma delas é a de horas foi passada como .getHorus()
-    var hora = 19//data.getHours()
+    var hora = data.getHours()
 
     //Mostrando o horario atual no id "msg" com innerHtml
     msg.innerHTML = `${hora} Horas`

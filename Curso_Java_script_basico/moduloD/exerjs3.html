@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="exerjs3.js"></script>
+    <title>Idade</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        main{
+            padding: 10px;
+            background-color: white;
+            margin: auto;
+            width:320px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.712);
+        }
+        input{
+            text-align: center;
+        }
+        img{
+            width:150px;
+            height:150px;
+            border-radius: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a idade</h1>
+    <main>
+        <div>
+            <label for="nasc">Ano de Nascimento:</label>
+            <input type="number" name="nasc" id="nasc" min="0" value="1999"><br> 
+
+            <p>sexo:
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="masc" checked>
+
+                <label for="sexo">Feminino</label>
+                <input type="radio" name="sexo" id="fem">
+            </p>
+            
+            <input type="button" value="Validar" onclick="anodenascimento()">
+        </div>
+        <p id="res">Complete os Campos!</p>
+        <div class="img">
+        </div>
+    </main>
+    <p>&copy;<em>HardCode</em></p>
+</body>
+</html>

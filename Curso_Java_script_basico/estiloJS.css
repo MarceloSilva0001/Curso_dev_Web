@@ -54,6 +54,11 @@ iframe{
     width: 90vw;
     height: 25vh;
 }
+.iframeEx{
+    
+    width: 90%;
+    height:320px;
+}
 div{
     background-color: white;
     border-radius: 10px;
