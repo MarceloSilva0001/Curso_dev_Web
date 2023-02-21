@@ -32,6 +32,4 @@ function carregar(){
     //Essa declaração indica que o o fundo principal vai alterar a cor se o bloco for veradeiro
         document.body.style.background = 'rgb(14, 112, 168)'
     }
-
->>>>>>> 7e77c439770988818e6794984f065c51f5c3682d
 }
