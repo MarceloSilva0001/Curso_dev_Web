@@ -18,26 +18,34 @@ function anodenascimento(){
         if(fsex[0].checked){
             genero =  'Homem'
             if(idade >= 0 && idade < 12){
-                img.attribute('src', '../midia/moduloD/idade/f.criança.jpg')
+               img.setAttribute('src', 'm.criança.jpg')
+               document.body.style.background = 'rgba(0, 38, 255, 0.616)'
             }else if(idade >=12 && idade < 18){
-
+                img.setAttribute('src', 'm.adolecente10.15.jpg')
             }else if(idade >=18 && idade < 30){
-
-            }else if(idade >=30 && idade < 50){
-
+                img.setAttribute('src', 'm.jovem.jpg')
+            }else if(idade >=30 && idade < 130){
+                img.setAttribute('src', 'm.velho.jpg')
+            }else{
+                img.setAttribute('src', 'caveira.jpg')
             }
         }else if(fsex[1].checked){
             genero =  'Mulher'
             if(idade >= 0 && idade < 12){
-                
+                img.setAttribute('src', 'f.criança.jpg')
+                document.body.style.background = 'rgba(255, 0, 191, 0.932)'
             }else if(idade >=12 && idade < 18){
-
+                img.setAttribute('src', 'f.adolecente10.15.jpg')
             }else if(idade >=18 && idade < 30){
-
-            }else if(idade >=30 && idade < 50){
-
+                img.setAttribute('src', 'f.jovem.jpg')
+            }else if(idade >=30 && idade < 130){
+                img.setAttribute('src', 'f.velha.jpg')
+            }else{
+                img.setAttribute('src', 'caveira.jpg')
             }
         }
-        res. innerHTML = genero+idade
+    res.innerHTML = 'Detectamos um '+genero+' com '+idade+' anos.'
+    res.appendChild(img)
+
  }
 }
