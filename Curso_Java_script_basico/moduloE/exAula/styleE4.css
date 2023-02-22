@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    width:320px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.712);
+}
+input{
+    text-align: center;
+}
+img{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
