@@ -9,26 +9,22 @@
     <title>Idade</title>
 </head>
 <body>
-    <h1>Qual a idade</h1>
-    <main>
-        <div>
-            <label for="nasc">Ano de Nascimento:</label>
-            <input type="number" name="nasc" id="nasc" min="0" value="2020"><br> 
-
-            <p>sexo:
-                <label for="sexo">Masculino</label>
-                <input type="radio" name="sexo" id="masc" checked>
-
-                <label for="sexo">Feminino</label>
-                <input type="radio" name="sexo" id="fem">
-            </p>
-            
-            <input type="button" value="Validar" onclick="anodenascimento()">
-            <hr>
-        <p id="res">Complete os Campos!</p>
-        </div>
-       
+    <h1>Vamos contar</h1>
+    <main> 
+        
+        <label for="inicio">Incio:</label>
+        <input type="number" name="inicio" id="fim" class="input" required max="2" min="1" value="1"> <br> <br> 
+        
+        <label for="fim">Fim</label> 
+        <input type="number" name="fim" id="fim" class="input" required max="2" min="1" value="1"> <br> <br> 
+        
+        <label for="pulo">Pulo</label> 
+        <input type="number" name="pulo" id="pulo" class="input" required max="2" min="1" value="1"> <br> <br>
+        <input type="button" value="Contar" class="button" onclick="contar()"> 
+        <hr>
+        <p id="res"></p>
     </main>
+    
     <p>&copy;<em>HardCode</em></p>
 </body>
 </html>
