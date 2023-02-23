@@ -20,3 +20,11 @@
            }
     }
 }
+
+function tabuada(){
+     var tabuada = document.querySelector('div.tabuada')
+     var num = document.getElementById('num').value
+     num = Number(num)
+
+     tabuada.innerHTML =  'num'
+}

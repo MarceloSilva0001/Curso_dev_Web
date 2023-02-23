@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Vamos contar</h1>
-    <main> 
+    <section> 
         
         <label for="inicio">Incio:</label>
         <input type="number" name="inicio" id="inicio" class="input" required  min="1" value="1"> <br> <br> 
@@ -24,8 +24,17 @@
         <input type="button" value="Contar" class="button" onclick="contar()"> 
         <hr>
         <p id="res"></p>
-    </main>
-    
+    </section>
+
+    <h1>Tabuada</h1>
+    <section>
+            <label for="num">Numero:</label>
+            <input type="number" name="num" id="num" required value="1">
+            
+            <input type="button" value="Tabuada" onclick="tabuada()">
+            <hr>
+            <div class="tabuada">Tabuada será informado aqui</div>
+    </section>
     <p>&copy;<em>HardCode</em></p>
 </body>
 </html>

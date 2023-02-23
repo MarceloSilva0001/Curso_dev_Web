@@ -4,13 +4,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+section{
     padding: 10px;
     background-color: white;
     margin: auto;
     width:320px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.712);
+    margin-top: 20px;
 }
 input{
     text-align: center;
@@ -22,4 +23,13 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+section  div.tabuada{
+    overflow-y:auto;
+    height: 200px;
+    width: 150px;
+    background-color: rgb(168, 149, 149);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
