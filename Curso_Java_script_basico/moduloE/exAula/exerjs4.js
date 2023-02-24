@@ -11,7 +11,9 @@
 
    //  res.innerHTML = `${inicio}/ ${fim}/ ${pulo}`
      if(fim>inicio){
-          if(pulo >= 2){
+          if(pulo <= 0){
+               window.alert('O Pulo Não pode dica vazio ou Ser menor que 1')
+          }else if(pulo >= 2){
                for(inicio=inicio;inicio<=fim;inicio+=pulo){
                     res.innerHTML +=inicio+'&#x1F449';
                     }
