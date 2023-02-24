@@ -1,3 +1,4 @@
+ 
   function contar(){
      var inicio = document.getElementById('inicio').value
      var fim = document.getElementById('fim').value
@@ -9,22 +10,34 @@
      pulo = Number(pulo)
 
    //  res.innerHTML = `${inicio}/ ${fim}/ ${pulo}`
-
-    if(pulo >= 2){
-         for(inicio=inicio;inicio<=fim;inicio+=pulo){
-          res.innerHTML +=inicio+'&#x1F449';
-            }
-    }else{
-         for(inicio=inicio;inicio<=fim;inicio++){
-          res.innerHTML +=inicio+'&#x1F449';
-           }
-    }
+     if(fim>inicio){
+          if(pulo >= 2){
+               for(inicio=inicio;inicio<=fim;inicio+=pulo){
+                    res.innerHTML +=inicio+'&#x1F449';
+                    }
+          }else{
+               for(inicio=inicio;inicio<=fim;inicio++){
+                    res.innerHTML +=inicio+'&#x1F449';
+                    }
+          }
+     }else{
+          window.alert('Digite um valor de FIM maior do que o de INICIO')
+     }
 }
 
 function tabuada(){
      var tabuada = document.querySelector('div.tabuada')
      var num = document.getElementById('num').value
      num = Number(num)
+     
+          for(i = 1;i <=10; i++){tabuada.innerHTML += `${num} x ${i} = ${i*num} <br>`}
+     }
+          
+          
+                                                                 
 
-     tabuada.innerHTML =  'num'
-}
+ /*
+var i = 2
+for(num = 1; num <=10;num++){
+     console.log(i+' x '+num+' = '+i*num)
+}*/
