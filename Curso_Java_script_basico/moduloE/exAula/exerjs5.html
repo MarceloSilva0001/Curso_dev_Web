@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="exerjs5.js"></script>
     <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(94, 84, 84);
+        }
+        section{
+            background-color: rgb(92, 212, 212);
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 300px;
+            margin: auto;
+        }
+        input{
+           text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <section>
+        Inicio: <input type="number" id="i"> <br> <br>
+        pulo: <input type="number" id="p">  <br> <br>
+        fim: <input type="number" id="f"> <br> <br>
+        <button onclick="contar()">Validar</button>
+        <hr>
+        <p id="res"></p>
+    </section>
 </body>
 </html>
