@@ -12,11 +12,15 @@ function contar(){
         res.innerHTML =    'Nenhum campo pode estar vazio Ou ter o valor 0'
     }else if(i<f){
         for(var c = i; c <= f; c += p){
-            res.innerHTML += `> ${c} `
+            res.innerHTML += ` > ${c} `
         }
+        res.innerHTML += `\u{1F3C1}`
+        res.innerHTML += `<br>--------------------------------<br>`
     }else{
         for(var c = i; c >= f; c -= p ){
-            res.innerHTML += `> ${c} `
+            res.innerHTML += ` > ${c} `
         }
+        res.innerHTML += `\u{1F3C1}`
+        res.innerHTML += `<br>--------------------------------<br>`
     }
 }
