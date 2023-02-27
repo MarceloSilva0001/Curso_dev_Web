@@ -8,6 +8,7 @@
     <style>
         body{
             background-color: rgb(141, 127, 127);
+            color: white;
         }
         div{
             width: 200px;
@@ -19,17 +20,30 @@
             text-align: center;
             color: white;
         }
+        img{
+            width: 90vw;
+        }
     </style>
+    <script src="teste.js"></script>
 </head>
 <body>
-
-    <input type="text" id="txt" value="teste"> 
-    <input type="button" value="adicionar" id="adc">
+    <a href="https://www.youtube.com/watch?v=ucfNgEl_Vcw&t=616s">aula</a> <br> <br>
+    <!-- <script>
+    function inicia() {
+    document.getElementById("adc").addEventListener("click", function(){
+        var list = document.getElementById("list");
+        var txt = document.getElementById("txt").value;
+        var li = document.createElement("li");
+        li.textContent= txt;
+        list.appendChild(li);
+    });
+}
+    window.addEventListener("load",inicia)
+    </script> -->
+    Digite algo aqui:
+    <input type="text" id="txt"><button onclick="teste()">Adicionar</button>
     
-    <div id="t"> 
-       
-    </div>
      <ul id="list"></ul>
-    <script src="teste.js"></script>
+   <img src="/Curso_Java_script_basico/midia/teste.jpg" alt="">
 </body>
 </html>
