@@ -38,7 +38,7 @@ function inicia() {
     });
   }
 }
-//incia a função "incia"
+//incia a função uma a função "incia", sem precisar clicar no button
 window.addEventListener("load",inicia);
 */
 function teste(){
@@ -65,9 +65,22 @@ function teste(){
 }
 
 function img(){
-    var res =  document.getElementById("res");
+    var res =  document.getElementById("ress");
     var img = document.createElement("img");
     img.src = "/Curso_Java_script_basico/midia/teste.jpg"
     res.appendChild(img)
 
+    
 }
+function a(){
+    var res =  document.getElementById("ress");
+    var a = document.createElement("input");
+    a.type = "text"
+
+    res.appendChild(a);
+}
+
+window.addEventListener('load',a)
+
+
+
