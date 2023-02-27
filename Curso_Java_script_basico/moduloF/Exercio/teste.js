@@ -61,6 +61,13 @@ function teste(){
     txt.focus();
 
     //O input vai iniciar zerado após clica em button
-    txt.value = ''
-    
+    txt.value = ''  
+}
+
+function img(){
+    var res =  document.getElementById("res");
+    var img = document.createElement("img");
+    img.src = "/Curso_Java_script_basico/midia/teste.jpg"
+    res.appendChild(img)
+
 }
