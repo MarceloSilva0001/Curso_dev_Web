@@ -1,10 +1,5 @@
-let num = [1,6,5,4,8];
-num [5] = 6;
-num.sort();
-num.push(7);
- 
-console.log(num)
-for(let i = 0;i<=num.length;i++){
-    console.log(num[i]);
-   
+let num = [4,5,6,4,8,0,2,0];
+
+for(var i = 0; i <= num.length;i++){
+    console.log(`${num[i]}`)
 }
