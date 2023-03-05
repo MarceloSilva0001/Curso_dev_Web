@@ -11,7 +11,7 @@ if(Number(n)>=1 && Number(n) <= 100){
 return false;
 }
 }
-//Essa função verifica se o valor está dentro de vetor, se o valor digitado for diferente de -1(valor dado quando o valor digitado não tem idice valido, indice valido começa apartir de 0 e vai somando)
+//Essa função verifica se o valor está dentro de vetor, se o valor digitado for diferente de -1(valor dado quando o valor digitado não tem idice valido, indice valido começa apartir de 0 e vai somando)//
 function  inlist(n,l){
 if(l.indexOf(Number(n)) != -1){
     return true;
@@ -21,7 +21,7 @@ if(l.indexOf(Number(n)) != -1){
 }
 
 function adicionar(){
-//só vai adicionar se o valor estiver o numero em num && e só vai adcionar se ele "!" não estiver na lista
+//só vai adicionar se o valor estiver o numero em num && e só vai adcionar se ele "!" não estiver na lista....
 if(isNumero(num.value) && !inlist(num.value, valores)){
     window.alert("Tudo ok")
 }else{
