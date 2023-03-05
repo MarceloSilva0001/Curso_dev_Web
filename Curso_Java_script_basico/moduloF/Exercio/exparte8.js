@@ -21,7 +21,7 @@ if(l.indexOf(Number(n)) != -1){
 }
 
 function adicionar(){
-//só vai adicionar se o valor estiver o numero em num && e só vai adcionar se ele "!" não estiver na lista....
+//só vai adicionar se o valor estiver o numero em num && e só vai adcionar se ele "!" não estiver na lista
 if(isNumero(num.value) && !inlist(num.value, valores)){
     window.alert("Tudo ok")
 }else{
