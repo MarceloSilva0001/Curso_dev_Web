@@ -1,5 +1,5 @@
 var reslist = document.getElementById("res");
-var res2 = document.getElementById("re2");
+var res2 = document.getElementById("res2");
 var num =  document.getElementById("num");
 //declaração de vetor
 let valores = [];
@@ -44,7 +44,34 @@ if(isNumero(num.value) && !inlist(num.value, valores)){
     num.focus();
 
 }
-
-
-
-
+function finalizar(){
+    if(valores.length == 0){
+        window.alert("adicione valores, antes de finalizar")
+    }else {
+        //Total de elementos dentro do vetor
+        let total = valores.length
+        //os dois numeros recebem o primeiro valor de elemento, para depois ser comparado com os demais.
+        let maior = valores[0];
+        let menor = valores[0];
+        //Para que os elementos de indice 0, sejam comparados com os demais, do vetor, será criado esse vetor.
+        //para cada posição "in" valores será executado um teste dentro do if
+        for(let pos in valores){
+            //se o valor na posição "pos" for maior que var(maior)
+            if(valores[pos] > maior){
+                //maior recebe o valor da posição pos
+                maior = valores[pos]
+            //se o valor na posição "pos" for menor que var(menor)
+            if(valores[pos] < menor){
+                //menor recebe o valor da posição pos
+                menor = valores[pos]
+            }
+        }
+        res2.innerHTML = ""
+        //mostrandos os dados na div
+        res2.innerHTML += `<p>Menor numero é: ${menor}</p>`
+        res2.innerHTML += `<p>Maior numero é: ${maior}</p>`
+        res2.innerHTML += `<p>Ao todo o vetor tem ${total} de elementos</p>`
+        
+    }
+  }
+}
