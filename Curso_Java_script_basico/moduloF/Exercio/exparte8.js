@@ -54,7 +54,8 @@ function finalizar(){
         let maior = valores[0];
         let menor = valores[0];
         let soma =  0;
-        let media = 0;       
+        let media = 0;    
+           
         
         //Para que os elementos de indice 0, sejam comparados com os demais, do vetor, será criado esse vetor.
         //para cada posição "in" valores será executado um teste dentro do if, pois esse é um laço de percuso que passa por todos os elementos do vetor
@@ -66,19 +67,22 @@ function finalizar(){
             if(valores[pos] > maior){
                 //maior recebe o valor da posição pos
                 maior = valores[pos]
+            }
             //se o valor na posição "pos" for menor que var(menor)
             if(valores[pos] < menor){
                 //menor recebe o valor da posição pos
                 menor = valores[pos]
             }
             
-        }
+        
+        media = soma / total
         res2.innerHTML = ""
         //mostrandos os dados na div
         res2.innerHTML += `<p>Menor numero é: ${menor}</p>`
         res2.innerHTML += `<p>Maior numero é: ${maior}</p>`
         res2.innerHTML += `<p>Ao todo o vetor tem ${total} de elementos</p>`
         res2.innerHTML += `<p>A soma de todos os valores é ${soma}</p>`
+        res2.innerHTML += `<p>A Média de valores é: ${media}</p>`
         
     }
   }
