@@ -5,5 +5,6 @@ function gerar(){
 
    numI = Number(numI)
    numF = Number(numF)
-    teste.innerHTML = `${numI}+${numF}`
+   // teste.innerHTML = `${numI}+${numF}`
+   if(var i = 0;i <= numF; i++)
 }
