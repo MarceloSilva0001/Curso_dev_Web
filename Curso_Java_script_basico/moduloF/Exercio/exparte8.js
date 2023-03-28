@@ -59,7 +59,7 @@ function finalizar(){
            
         
         //Para que os elementos de indice 0, sejam comparados com os demais, do vetor, será criado esse vetor.
-        //para cada posição "in" valores será executado um teste dentro do if, pois esse é um laço de percuso que passa por todos os elementos do vetor
+        //para cada posição "in" valores  será executado um teste dentro do if, pois esse é um laço de percuso que passa por todos os elementos do vetor
         for(let pos in valores){
             //como o laço é no formato  in e passa por todos o valores, vamos fazer uma soma entre os elementos
             soma += valores[pos]
